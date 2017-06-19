@@ -1,3 +1,9 @@
 # Sublime files #
 #################
 *.sublime-project
+*.DS_Store
+src/assets/less/components/hamburgergs/
+dist/themes/selectable/js/external/anki_source/
+src/assets/less/components/images/
+*.mdd_out
+dist/themes/selectable/card-01-for-test.html

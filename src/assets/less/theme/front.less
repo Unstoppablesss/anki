@@ -1,15 +1,71 @@
 //
 // Front
 // =============================================
+//html{
+//	font-size: 100%;
+//	.screens(
+//	{font-size: 50%},
+//	{font-size: 60%},
+//	{font-size: 70%},
+//	{font-size: 80%},
+//	{font-size: 90%},
+//	{font-size: 95%}
+//	);
+//}
 
-#front {}
+
+#front {
+
+}
 .syntax {}
-.sample-code {}
 
+.sample-code {
+	font-size: @font-size-large-em;
+	margin: 0 auto;
+	width: 85%;
+
+		.screensMaxMobile(
+		{
+// wide
+	},
+		{
+// narrow
+		width: 100%;
+		padding: 0;
+	},
+		{},
+		{}, 
+		{},
+		{},
+		{},
+		{
+}
+	);
+}
+//	{width: 100%;
+//	padding: 0;
+//	padding-top: .5em;},
+
+p.title {
+   margin: 0 auto;
+   font-size: 2.5rem;
+   width: 80%;
+   padding-bottom: 1em;
+   text-align: left;
+   line-height: 1.2em
+}
+
+p {
+	font-size: 2rem;
+}
 .title,
 .puzzle-hint {
+//	.to-rem (
+//		font-size, @font-size-xxx-large
+//	);
   color: @color-gray-dark;
   font-style: italic;
+	font-size: @font-size-xxx-large-em;
 }
 
 // Cloze =======================================
@@ -18,4 +74,54 @@
 
 .title + .title {
   display: none;
+}
+
+.gamb-wrap-front,
+.gamb-wrap-back {
+	position: absolute;
+	top: 50px;
+	
+}
+.gamb-wrap-front {
+	left: 10%;
+}
+.gutter {
+  color: white; 
+  width: 80%;
+//  padding: 0 .2em; 
+  margin: 0 auto;
+      .screensMaxMobile(
+    {
+// wide
+  },
+    {
+// narrow
+    width: 100%;
+  },
+    {},
+    {}, 
+    {},
+    {},
+    {},
+    {
+}
+  );
+}
+.gutter.js {
+  background: #bc5575; 
+}
+.gutter.css {
+  background: #4078a9; 
+}
+.gutter .devel {
+  background: #667990; 
+}
+.gutter .html {
+  background: #51accf; 
+}
+.gutter .wordPress {
+  background: #8689c5; 
+}
+.gutter .typograph {
+  background: #de9b26; 
 }

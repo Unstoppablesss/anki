@@ -7,6 +7,7 @@
     - [Cloze Anki theme](../themes/cloze/README.md)
       - **Deck example**
       - [Notes](../themes/README.md#notes)
+    - [Selectable](../themes/selectable/README.md)
   - **THEME COLOURS**
     - [Basic highlighting](../themes/assets/css/README.md)
     - [Automatic highlighting](../themes/assets/css/README.md#automatic-syntax-highlighting-with-pygments)

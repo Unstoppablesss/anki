@@ -3,14 +3,18 @@
 // =============================================
 // * Monokai dark
 
-@theme-dark-background: #272822;
+@theme-dark-background: #384047;
 
-@theme-dark-base:      #f8f8f8;
-@theme-dark-op:        #f12056; // Pink
-@theme-dark-int:       #a877ff; // Purple
-@theme-dark-str:       #e5de73; // Yellow
-@theme-dark-key:       #70d8ef; // Blue
-@theme-dark-var:       #aae626; // Green
+@theme-dark-base:      #c8ced1;
+@theme-dark-color:      #ffffff;
+@theme-dark-sign:      #6c71c4;
+@theme-dark-op:        #5FA7CD; // Pink
+@theme-dark-int:       #EF5C54; // Purple
+@theme-dark-str:       #DFD7A9; // Yellow
+@theme-dark-key:       #5FA7CD; // Blue
+@theme-dark-var:       #2aa198; // Green
+@theme-dark-other:       #839496; // Green
+//@theme-dark-var:       #2aa198; // Green
 @theme-dark-comment:      #777; // Grey
 @theme-dark-lowlight:  #ec7b20; // Orange (Wildcard color)
 @theme-dark-highlight: #ec7b20; // Orange (Wildcard color)
@@ -22,6 +26,7 @@ pre .hljs {
   text-align: left;
   color: @theme-dark-base;
   background: @theme-dark-background;
+  opacity: .99;
 }
 
 pre code b, pre code strong { color: @theme-dark-op;  }

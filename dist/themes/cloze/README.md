@@ -7,6 +7,7 @@
     - **Cloze Anki theme**
       - [Deck example](../../deck/README.md)
       - [Notes](#notes)
+    - [Selectable](../selectable/README.md)
   - **THEME COLOURS**
     - [Basic highlighting](../assets/css/README.md)
     - [Automatic highlighting](../assets/css/README.md#automatic-syntax-highlighting-with-pygments)
@@ -32,7 +33,7 @@ You'll recognise some of these fields from the [Puzzle](../simple/README.md) and
 
 - The type of `Syntax` we're learning.
 
-#### ☆ Syntax (inline code)
+#### ★ Syntax (code block {cloze})
 
 - The actual function or symbol, i.e. `len()`.
 - This will be wrapped in `<code>`.

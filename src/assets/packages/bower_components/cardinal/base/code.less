@@ -11,8 +11,10 @@ kbd,
 pre,
 samp {
   font-family: @font-family-monospace; /* 1 */
-  .to-rem(font-size, @code-font-size);
+//  font-size: @font-size-xxx-small-em;
+  .to-rem(font-size, 28);
   font-style: @code-font-style;
+//  color: red; 
   color: @code-text-color;
 }
 
@@ -40,6 +42,7 @@ kbd {
 pre {
   position: relative;
   overflow: auto;
+	-webkit-overflow-scrolling: touch;
   .to-rem(padding, @code-pre-padding);
   white-space: pre;
   word-wrap: normal;

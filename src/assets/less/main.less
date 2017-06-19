@@ -2,20 +2,35 @@
 // Main
 // =============================================
 /*! Anki v1.0.0 | https://github.com/badlydrawnrob/anki */
+/*! Anki v1.0.1 / https://github.com/bikenik/Anki_Templates */
 /*! cardinalcss v3.2.5 | MIT License | http://cardinalcss.com */
 
+//
+// Base -> Cardinal imports
+// =============================================
+
 @import 'base/cardinal';
+//@import '../packages/bower_components/cardinal/cardinal';
 @import 'base/variables';
+@import 'base/mixins';
+@import 'base/reset';
 
 // Base theme
 @import 'theme/base';
 @import 'theme/front';
+@import 'theme/back';
 @import 'theme/answer';
 @import 'theme/puzzle';
+@import 'theme/typogpaphy';
+// Components
+@import 'components/UI-selectable';
 // Code theme
 @import 'theme/code';
-@import 'theme/pre';
+@import 'theme/pre'; 
 // Pygments
 @import 'theme/pygments.less';
 // Helpers
 @import 'utilities/curly-brackets';
+// Helpers
+@import 'components/buttons';
+@import (inline) 'components/css/_index-hamb.css';

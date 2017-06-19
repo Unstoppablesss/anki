@@ -1,0 +1,130 @@
+<!-- ==========================================
+     Selectable theme
+   - Fields:   ★ Selectable choices:
+     - variant-1 | variant-2 | variant-3
+   - Card: What's the answer?
+   - Info: Choose from the offered answers 
+   - Key:  ★ Required
+           ☆ Optional (recommended)
+           ✎ Optional (Notes)
+=============================================== -->
+
+
+
+<!-- ==========================================
+MAIN JQUERY
+=============================================== -->
+<script type="text/javascript">
+// PLACE FOR jQuery-v3.2.1-min.js
+</script>
+<!-- ==========================================
+end MAIN JQUERY
+=============================================== -->
+
+
+
+<!-- ==========================================
+JQUERY UI 
+Includes: widget.js, widgets/selectable.js, widgets/mouse.js
+=============================================== -->
+<script type="text/javascript">
+  // PLACE FOR jquery-ui-1.12.1-min.js
+</script>
+<!-- ==========================================
+end JQUERY UI
+=============================================== -->
+
+
+
+<!-- ==========================================
+JQUERY UI Touch Punch
+=============================================== -->
+<script type="text/javascript">
+  // PLACE FOR jQuery UI Touch Punch 0.2.3.js
+</script>
+<!-- ==========================================
+end JQUERY UI Touch Punch
+=============================================== -->
+
+<div id="front" class="container card-1 pb">
+  <h1 class="syntax">
+<div class="gutter js">
+    {{^☆ Syntax}}Syntax{{/☆ Syntax}}
+    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+</div>
+
+<div id="selectbox">   
+ {{★ Selectable choices}}
+</div>
+
+  </h1>
+
+
+<p class = "title"> {{★ Title}} </p>  
+
+  {{#☆ Sample (code block or image)}}<button id="toggle">Show Sample code</button>
+  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>{{/☆ Sample (code block or image)}}
+
+<span class="ui-icon ui-icon-arrowthick-1-n"> </span>
+
+<div class = "add-space-for-mobile"></div>
+
+<!-- ==========================================
+FRONT-SELECTABLE JS
+=============================================== -->
+<script type="text/javascript">
+  // PLACE FOR front-selectable.js
+</script>
+<!-- ==========================================
+end FRONT-SELECTABLE JS
+=============================================== -->
+
+
+
+<!-- =====================[Back of card]===================== -->
+
+
+
+
+<!-- ==========================================
+MAIN JQUERY
+=============================================== -->
+<script type="text/javascript">
+// PLACE FOR jQuery-v3.2.1-min.js
+</script>
+<!-- ==========================================
+end MAIN JQUERY
+=============================================== -->
+
+  <h1 class="syntax">
+<div class="gutter js">
+{{^☆ Syntax}}Syntax{{/☆ Syntax}}
+{{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+</div>
+<div id="selectbox">   
+ {{★ Selectable choices}}
+</div>
+
+ </h1>
+<button id="toggle">↑</button>
+  <div class="right-answers mb"></div>
+
+<div id="select-result" />   
+<br><br>
+<div id="answer" class="container card-1 pt+">
+  <div class="box-code">{{★ Key point (code block or image)}}</div>
+  <div class="box-notes">{{★ Key point notes}}</div>
+  <div class="footer mt pb">
+    {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
+  </div>
+</div>
+
+<!-- ==========================================
+BACK-SELECTABLE JS
+=============================================== -->
+<script type="text/javascript">
+  // PLACE FOR back-selectable.js
+</script>
+<!-- ==========================================
+end BACK-SELECTABLE JS
+=============================================== -->

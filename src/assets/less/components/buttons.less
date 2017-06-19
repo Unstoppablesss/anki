@@ -1,0 +1,99 @@
+/*------------------buttonME------------------*/
+
+.toggle,
+.toggle-back {
+  color: white;
+  background: #52bab3;
+//  background: black;
+  border: 1px solid #c47171;
+  border-color: rgba(0, 0, 0, .1);
+  font-size: 1.75em;
+  height: 50px;
+  padding: 0 .75em;
+}
+
+button + button {
+  margin-left: .5em;
+}
+
+p + button {
+  background: #52bab3;
+}
+
+.list button + button {
+  background: #768da3;
+}
+
+.list li button + button {
+  background: #508abc;
+}
+
+li button:first-child {
+  margin-left: auto;
+  background: #52bab3;
+}
+
+.list li button:last-child {
+  background: #768da3;
+}
+
+li button {
+  font-size: .75em;
+  padding: .5em .65em;
+}
+
+
+/*-----------------------------------------button--------------------------*/
+
+
+
+
+
+button#toggle {
+  display: none;
+  width:1.5em;
+  height: 1.5em;
+  margin-bottom: 20px;
+  color: white;
+  background: #F39814;
+  border-radius: 50%;
+  border: none;
+  border-color: rgba(0, 0, 0, .1);
+  font-size: 1.8em;
+  // height: auto;
+  padding: 0 .2em;
+  transition: .3s;
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+button + button {
+  margin-left: .5em;
+}
+
+p + button {
+  background: #52bab3;
+}
+
+.list button + button {
+  background: #768da3;
+}
+
+.list li button + button {
+  background: #508abc;
+}
+
+li button:first-child {
+  margin-left: auto;
+  background: #52bab3;
+}
+
+.list li button:last-child {
+  background: #768da3;
+}
+
+li button {
+  font-size: .75em;
+  padding: .5em .65em;
+}

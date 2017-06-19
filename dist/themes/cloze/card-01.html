@@ -2,7 +2,7 @@
      Cloze theme
 
    - {{c1}}:  What's the answer?
-   - Fields:  ★ Syntax (code block)
+   - Fields:  ★ Syntax (code block {cloze})
               - {{c1::preCodeContents::hint}}
               - {{c1::preCodeContentsExtra::hint}}
    - Info:    Also requires:
@@ -19,34 +19,57 @@
 
 <div id="front" class="container card-1 pb">
   <h1 class="syntax">
+<div class="gutter js">
     {{^☆ Syntax}}Syntax{{/☆ Syntax}}
-    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}<br>
+</div>
+<mark style="font-weight: 100; "><em>{{hint::HINT}}</em></mark> 
     {{#☆ Syntax (inline code)}}
       <code>{{☆ Syntax (inline code)}}</code>
     {{/☆ Syntax (inline code)}}
   </h1>
   <div class="sample-code mb">
-    {{cloze:★ Syntax (code block)}}
+    {{cloze:★ Syntax (code block {cloze})}}
   </div>
+{{type:cloze:★ Syntax (code block {cloze})}}
   <p class="title">{{★ Title}}</p>
 </div>
+<div class = "add-space-for-mobile"></div>
 
-<!-- ========================================== -->
+<!-- ==========================================
+TYPINGS FIELD FEATURE
+=============================================== -->
+<script type="text/javascript">
+// PLACE FOR app_type-min.js
+</script>
+<!-- ==========================================
+end TYPINGS FIELD FEATURE
+=============================================== -->
 
 
-<div id="answer" class="container card-1 pt+">
+<!-- ===================[back of card]======================= -->
+
+
+<div id="answer" class="container card-1 pt">
   <h1 class="syntax">
+<div class="gutter js">
     {{^☆ Syntax}}Syntax{{/☆ Syntax}}
     {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+</div>
     {{#☆ Syntax (inline code)}}
       <code>{{☆ Syntax (inline code)}}</code>
     {{/☆ Syntax (inline code)}}
   </h1>
-  <div class="box-code">
-    {{cloze:★ Syntax (code block)}}
+  <div class="sample-code mb">
+    {{cloze:★ Syntax (code block {cloze})}}
   </div>
+<div  class="table_answer mb">
+      <div class="td_back fz">
+  {{type:cloze}}
+  </div>
+</div>
   <div class="box-notes">{{★ Key point notes}}</div>
-  <div class="footer mt pb">
+  <div class="footer mt pb tl">
     {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
   </div>
 </div>

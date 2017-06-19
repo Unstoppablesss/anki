@@ -2,9 +2,11 @@
 // Base -> Mixins -> Media Queries
 // =============================================================================
 
+
+
 //
 // Media query mixins for various screen sizes.
-//
+// 
 // @link http://cbrac.co/1tB2TXR
 //
 
@@ -144,11 +146,123 @@
 // @link http://cbrac.co/1tB2TXR
 //
 
+// mobile brk variable
+
+//@brk-extra-narrow 				
+//@brk-iPhone6s-portrait  	
+//@brk-iPhone6sPlus-portrait
+//@brk-iPhone-wide   				
+//@brk-iPhone6s-wide   			
+//@brk-iPhone6sPlus-wide 		
+//@brk-narrow 							
+//@brk-wide   							
+
+// Usage 
+
+//		.screensMaxMobile(
+//		{
+//// wide
+//	},
+//		{
+//// narrow
+//	},
+//		{
+//// iPhone6sPlus-wide
+//	},
+//		{
+//// iPhone6s-wide
+//	}, 
+//		{
+//		// iPhone-wide
+//	},
+//		{
+//		// iPhone6sPlus-portrait
+//	},
+//		{
+//		// iPhone6s-portrait
+//	},
+//		{
+//		// extra-narrow
+//	}
+//	);
+
+// wide
+.mobile-wide(@rules) {
+  @media (max-width: @brk-wide) {
+    @rules();
+  }
+}
+// narrow
+.mobile-narrow(@rules) {
+  @media (max-width: @brk-narrow) {
+    @rules();
+  }
+}
+// iPhone6sPlus-wide
+.mobile-iPhone6sPlus-wide(@rules) {
+  @media (max-width: @brk-iPhone6sPlus-wide) {
+    @rules();
+  }
+}
+// iPhone6s-wide
+.mobile-iPhone6s-wide(@rules) {
+  @media (max-width: @brk-iPhone6s-wide) {
+    @rules();
+  }
+}
+// iPhone-wide
+.mobile-iPhone-wide(@rules) {
+  @media (max-width: @brk-iPhone-wide) {
+    @rules();
+  }
+}
+// iPhone6sPlus-portrait
+.mobile-iPhone6sPlus-portrait(@rules) {
+  @media (max-width: @brk-iPhone6sPlus-portrait) {
+    @rules();
+  }
+}
+// iPhone6s-portrait
+.mobile-iPhone6s-portrait(@rules) {
+  @media (max-width: @brk-iPhone6s-portrait) {
+    @rules();
+  }
+}
+// extra-narrow
+.mobile-extra-narrow(@rules) {
+  @media (max-width: @brk-extra-narrow) {
+    @rules();
+  }
+}
+
+
+
+
 .screens(@rules-xs, @rules-sm, @rules-md, @rules-lg, @rules-xl, @rules-xxl) {
-  .screen-xs-min(@rules-xs);
+  .screen-xs-max(@rules-xs);
   .screen-sm-min(@rules-sm);
   .screen-md-min(@rules-md);
   .screen-lg-min(@rules-lg);
   .screen-xl-min(@rules-xl);
   .screen-xxl-min(@rules-xxl);
+}
+
+.screensMax(@rules-xs, @rules-sm, @rules-md, @rules-lg, @rules-xl, @rules-xxl) {
+  .screen-xs-max(@rules-xs);
+  .screen-sm-max(@rules-sm);
+  .screen-md-max(@rules-md);
+  .screen-lg-max(@rules-lg);
+  .screen-xl-max(@rules-xl);
+  .screen-xxl-min(@rules-xxl);
+}
+
+.screensMaxMobile(@rules-eb, @rules-xxl, @rules-xl, @rules-lg, @rules-md, @rules-sm, @rules-xs, @rules-en) {
+  .mobile-wide(@rules-eb);
+  .mobile-narrow(@rules-xxl);
+  .mobile-iPhone6sPlus-wide(@rules-xl);
+  .mobile-iPhone6s-wide(@rules-lg);
+  .mobile-iPhone-wide(@rules-md);
+  .mobile-iPhone6sPlus-portrait(@rules-sm);
+  .mobile-iPhone6s-portrait(@rules-xs);
+  .mobile-extra-narrow(@rules-en);
 }
