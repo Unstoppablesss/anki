@@ -1,4 +1,4 @@
-# Anki Simple Theme: How to add content to cards
+# Anki Selectable Theme: How to add content to cards
 
 - [Home](../../README.md)
   - **THEME**
