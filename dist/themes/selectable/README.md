@@ -17,10 +17,7 @@
 
 ### What's the answer?
 
-These fields are shared with the [Puzzle theme](../puzzle/README.md)). The purpose of these fields is to ask:
-
-- What does the following code do?
-- How can we use the syntax examples and what would be the result?
+The fields of the choice are showing in a random order.   
 
 #### ★ Title
 
