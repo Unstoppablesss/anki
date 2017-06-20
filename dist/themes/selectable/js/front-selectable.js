@@ -1,5 +1,5 @@
 window.scrollTo(0, 0);
-/*--------------------DIVIDE BY ( "/")-------------------------*/
+/*--------------------DIVIDE BY ( "|")-------------------------*/
 	function shuffle(array) {
 		var currentIndex = array.length
 			, temporaryValue, randomIndex;
@@ -34,18 +34,13 @@ list = list + "</ul>";
 target.innerHTML = list;
 }
 
-//if (examples.length > 0 && $("#selectable>li")[0] === undefined) {
 	divide(examples);
-//}
-
 
 /*--------------------SELECTABLE-------------------------*/
 	var result;
   var arrayNum;
 	$(function () {
 		$("#selectable").bind( "mousedown touchstart", function(e) {
-//			event.stopPropagation();
-//			event.preventDefault();
 			e.preventDefault();
 			e.metaKey = true;
 } ).selectable({
@@ -54,15 +49,6 @@ target.innerHTML = list;
 				result = $(".ui-selected", this).map(function () {
 					return $( "li" ).index(this);
 				}).get();
-//				$('#select-result').html(result);
 			}
 		});
 	});
-
-
-
-
-
-//.bind( "mousedown", "click", function ( e ) {
-//    e.metaKey = true;
-//} )
