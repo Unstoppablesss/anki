@@ -17,7 +17,8 @@
 
 ### What's the answer?
 
-The fields of the choice are showing in a random order.   
+- The fields of the choice are showing in a random order.
+- May be it won't work correctly in the AnkiDroid. Was tested on Mac clients (descktop & mobile) and Windows (desctop).
 
 #### ★ Title
 
