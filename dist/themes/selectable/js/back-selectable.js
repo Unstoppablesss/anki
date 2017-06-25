@@ -1,5 +1,5 @@
-// var sequential = ["'7'", "<i>7</i>", "Syntax Error", "Nan"]; //to comment for Anki
-// var result = [1]; //to comment for Anki
+// var sequential = ["'7'", "<i>7</i>", "Syntax Error", "<i>Nan</i>"]; //to comment for Anki
+// var result = [3]; //to comment for Anki
 /*=================================================
 =            DIVIDE BY ( "|") FOR TEST            =
 =================================================*/
@@ -21,16 +21,11 @@
 // }
 /*=====  End of DIVIDE BY ( "|") FOR TEST  ======*/
 var title = document.querySelector('.title');
-var toggle = document.getElementById('toggle');
+// var toggle = document.getElementById('toggle');
 var rightAnswers = document.querySelector('.right-answers');
 var button = document.getElementsByTagName('button')[0];
 // rightAnswers.style.display = 'none';
-if (toggle) {
-	toggle.addEventListener('click', function () {
-		button.classList.toggle('active');
-		rightAnswers.classList.toggle('active');
-	});
-}
+
 /*================================================
 =            DIVIDE BY ( "|") TO ANKI            =
 ================================================*/
@@ -63,6 +58,7 @@ if (result !== undefined) {
 var value;
 var counter = 0;
 var newResult = [];
+var ok = true;
 for (var z = 0; z < lengthRe; z++) {
 	for (i = 0; i < sequential.length; i++, counter++) {
 		value = result[z];
@@ -88,46 +84,69 @@ for (var i = 0; i < $(".ui-widget-content").length; i++) {
 		console.log("italic");
 		correctArr.push(i);
 		if (i === newResult[i]) {
-			$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#6bd382";
+			$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#2bb427";
 			$(".ui-widget-content")[newResult[i]].style.color = "white";
 			var m = i;
+			ok = false;
 		};
 	}
 	else if (italic === null && $(".ui-widget-content")[newResult[i]] !== undefined) {
-		$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#bc5476 ";
+		$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#d52834";
 		$(".ui-widget-content")[newResult[i]].style.color = "white";
-		toggle.style.display = "inline-block";
-		rightAnswers.style.display = "block";
 	}
 }
 
 function sortRightAnwers() {
 	for (var i = 0; i < result.length; i++) {
-		if (result[i] !== correctArr[i]) {
+		if (result[i] !== correctArr[i] || result.length !== correct) {
 			for (var i = 0; i < result.length; i++) {
-				$(".ui-widget-content")[result[i]].style.backgroundColor = "#bc5476 ";
+				$(".ui-widget-content")[result[i]].style.backgroundColor = "#d52834";
 				$(".ui-widget-content")[result[i]].style.color = "white";
-				toggle.style.display = "inline-block";
-				rightAnswers.style.display = "block";
 			}
+			ok = true;
 		}
 	}
 }
 if (result) {
 	sortRightAnwers();
 }
-var rightAnswer = [];
-for (var i = 0; i < correctArr.length; i++) {
-	rightAnswer.push($(".ui-widget-content")[correctArr[i]].textContent);
+
+if (result && ok) {
+	$("#selectbox.back")[0].classList.add('active');
+	$("#selectbox.back")[0].addEventListener('click', function () {
+		$("#selectbox.back")[0].style.border = "dashed 0.2em #d52834";
+			if (this.className !== "back"){
+				this.classList.toggle('active');
+					for (var i = 0; i < $(".ui-widget-content").length; i++) {
+						$(".ui-widget-content")[i].style.backgroundColor = null;
+						$(".ui-widget-content")[i].style.color = "black";
+				}
+					for (var i = 0; i < correctArr.length; i++) {
+						$(".ui-widget-content")[correctArr[i]].style.backgroundColor = "#2bb427";
+						$(".ui-widget-content")[correctArr[i]].style.color = "white";
+				}
+		} else{
+				for (var i = 0; i < $(".ui-widget-content").length; i++) {
+						$(".ui-widget-content")[i].style.backgroundColor = null;
+						$(".ui-widget-content")[i].style.color = "black";
+					}
+				sortRightAnwers();
+				this.classList.toggle('active');
+		}
+	});
 }
-var list2 = "";
-list2 += "<ul id='selectable'>";
-for (var i = 0; i < rightAnswer.length; i++) {
-	list2 += "<li class='ui-widget-content'>" + rightAnswer[i] + '</li>';
-}
-list2 += "</ul>";
-if (lengthRe === 0) {
-	toggle.style.display = "inline-block";
-	rightAnswers.style.display = "block";
-}
-$(".right-answers")[0].innerHTML = list2;
+// var rightAnswer = [];
+// for (var i = 0; i < correctArr.length; i++) {
+// 	rightAnswer.push($(".ui-widget-content")[correctArr[i]].textContent);
+// }
+// var list2 = "";
+// list2 += "<ul id='selectable'>";
+// for (var i = 0; i < rightAnswer.length; i++) {
+// 	list2 += "<li class='ui-widget-content'>" + rightAnswer[i] + '</li>';
+// }
+// list2 += "</ul>";
+// if (lengthRe === 0) {
+// 	toggle.style.display = "inline-block";
+// 	rightAnswers.style.display = "block";
+// }
+// $(".right-answers")[0].innerHTML = list2;

@@ -7070,23 +7070,43 @@ blockquote {
   padding-left: 15px;
 }
 @media (max-width: 1025px) {
-  .add-space-for-mobile {
+  .add-space-for-mobile-cloze {
     height: 360px;
   }
 }
 @media (max-width: 769px) {
-  .add-space-for-mobile {
+  .add-space-for-mobile-cloze {
     height: 270px;
   }
 }
 @media (max-width: 569px) {
-  .add-space-for-mobile {
+  .add-space-for-mobile-cloze {
     height: 165px;
   }
 }
 @media (max-width: 321px) {
-  .add-space-for-mobile {
+  .add-space-for-mobile-cloze {
     height: 220px;
+  }
+}
+@media (max-width: 1025px) {
+  .add-space-for-mobile-base {
+    height: 160px;
+  }
+}
+@media (max-width: 769px) {
+  .add-space-for-mobile-base {
+    height: 170px;
+  }
+}
+@media (max-width: 569px) {
+  .add-space-for-mobile-base {
+    height: 65px;
+  }
+}
+@media (max-width: 321px) {
+  .add-space-for-mobile-base {
+    height: 120px;
   }
 }
 body {
@@ -7195,6 +7215,9 @@ input#typeans {
 h1.syntax {
   margin: 0 auto;
 }
+.mobile .tag {
+  display: none;
+}
 .sample-code {
   font-size: 1.125em;
   margin: 0 auto;
@@ -7238,7 +7261,7 @@ p {
 }
 .gutter {
   color: white;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 @media (max-width: 1025px) {
@@ -7277,13 +7300,11 @@ p {
   opacity: 0;
   -webkit-transition: .3s;
   transition: .3s;
+  margin-top: -165px;
 }
 .right-answers.active {
   opacity: 1;
-}
-#answer {
-  /*px*/ border-top: 1px solid #dedede;
-  /*rem*/ border-top: 0.0625rem solid #dedede;
+  margin-top: 0px;
 }
 #answer ul,
 #answer ol {
@@ -7443,6 +7464,11 @@ code#typeans {
 #feedback {
   font-size: 1em;
 }
+#selectbox {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
 #selectable .ui-selecting {
   background: #FECA40;
 }
@@ -7451,19 +7477,32 @@ code#typeans {
   color: white;
 }
 #selectable {
+  display: inline-block;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 99.99%;
 }
 #selectable li {
   font-family: monospace;
-  margin: 1px;
+  margin: 0;
   padding: 1em .2em;
   font-size: .8em;
   font-weight: 100;
   height: auto;
   z-index: 100;
+}
+#selectbox.back {
+  border-collapse: separate;
+  border-spacing: 2px;
+  box-shadow: 0 0 1em #53d94f;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+#selectbox.back.active {
+  box-shadow: 0 0 1em #e26770;
 }
 .ui-selectable {
   -ms-touch-action: none;
@@ -8311,6 +8350,9 @@ code q {
 code mark {
   color: #cb2829;
 }
+kbd {
+  display: inline !important;
+}
 pre,
 pre code,
 pre .hljs {
@@ -8619,7 +8661,7 @@ i[class^='}']::before {
 .toggle-back {
   color: white;
   background: #52bab3;
-  border: 1px solid #c47171;
+  border: none;
   border-color: rgba(0, 0, 0, 0.1);
   font-size: 1.75em;
   height: 50px;
@@ -8653,15 +8695,18 @@ button#toggle {
   display: none;
   width: 1.5em;
   height: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: white;
   background: #F39814;
   border-radius: 50%;
+  border: none;
   border-color: rgba(0, 0, 0, 0.1);
   font-size: 1.8em;
   padding: 0 .2em;
   -webkit-transition: .3s;
   transition: .3s;
+  z-index: 100;
 }
 button#toggle.active {
   -webkit-transform: rotate(180deg);

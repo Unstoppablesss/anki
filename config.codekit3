@@ -210,9 +210,9 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/themes\/selectable\/js\/back-selectable-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oAP": "\/dist\/themes\/selectable\/js\/min\/back-selectable-min.js",
+		"oF": 2,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/dist\/themes\/selectable\/js\/external\/anki_source\/jQuery-v1.5-min.js": {
@@ -264,7 +264,25 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dist\/themes\/selectable\/js\/front-selectable-min.js",
+		"oAP": "\/dist\/themes\/selectable\/js\/min\/front-selectable-min.js",
+		"oF": 2,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/dist\/themes\/selectable\/js\/min\/back-selectable-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/themes\/selectable\/js\/min\/back-selectable-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/themes\/selectable\/js\/min\/front-selectable-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/themes\/selectable\/js\/min\/front-selectable-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -286,14 +304,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/dist\/themes\/selectable\/Selectable_preview.gif": {
-		"ft": 4194304,
-		"iS": 3015561,
-		"oA": 0,
-		"oAP": "\/dist\/themes\/selectable\/Selectable_preview.gif",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/dist\/themes\/simple\/card-01.html": {
 		"ft": 8192,
@@ -1094,22 +1104,6 @@
 		"oAP": "\/src\/assets\/less\/css\/main.css.map",
 		"oF": 0
 		},
-	"\/src\/assets\/less\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/assets\/less\/main-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/src\/assets\/less\/main.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/assets\/less\/main.css.map",
-		"oF": 0
-		},
 	"\/src\/assets\/less\/main.less": {
 		"aP": 1,
 		"bl": 0,
@@ -1119,8 +1113,8 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/src\/assets\/less\/main.css",
-		"oF": 0,
+		"oAP": "\/src\/assets\/less\/css\/main.css",
+		"oF": 2,
 		"oS": 0,
 		"rU": 0,
 		"sI": 0,

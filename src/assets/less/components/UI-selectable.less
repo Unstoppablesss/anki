@@ -1,6 +1,11 @@
   #feedback { 
     font-size: 1em; 
 }
+	#selectbox {
+		width: 80%;
+		margin: 0 auto;
+		overflow: auto;
+	}
   #selectable .ui-selecting { 
     background: #FECA40; 
 }
@@ -9,21 +14,34 @@
     color: white; 
 }
   #selectable { 
-    list-style-type: none; 
+  	display: inline-block;
+    list-style-type: none;
+
     margin: 0 auto;
     padding: 0; 
-    width: 80%; 
+    width: 99.99%; 
 }
   #selectable li { 
 		font-family: monospace;
-    margin: 1px; 
+    margin: 0; 
     padding: 1em .2em; 
     font-size: .8em; 
 		font-weight: 100;
     height: auto; 
 		z-index: 100;
 }
-
+	#selectbox.back {
+		border-collapse: separate;
+		border-spacing: 2px;
+		box-shadow: 0 0 1em lighten(#2bb427, 15%);
+		margin: 10px auto;
+		// padding: 2px;
+		cursor: pointer;
+		transition: .15s;
+	   &.active {
+	   	box-shadow: 0 0 1em lighten(#d52834, 15%);
+   }
+}
 
 .ui-selectable {
 	-ms-touch-action: none;

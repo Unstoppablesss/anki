@@ -5,7 +5,8 @@
   color: white;
   background: #52bab3;
 //  background: black;
-  border: 1px solid #c47171;
+  // border: 1px solid #c47171;
+  border: none;
   border-color: rgba(0, 0, 0, .1);
   font-size: 1.75em;
   height: 50px;
@@ -53,7 +54,8 @@ button#toggle {
   display: none;
   width:1.5em;
   height: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: white;
   background: #F39814;
   border-radius: 50%;
@@ -63,6 +65,7 @@ button#toggle {
   // height: auto;
   padding: 0 .2em;
   transition: .3s;
+  z-index: 100;
   &.active {
     transform: rotate(180deg);
   }

@@ -112,24 +112,45 @@ blockquote {
 //   content: "∘ ";
 ////   color: $color-prim;
 //}
-.add-space-for-mobile {
+.add-space-for-mobile-cloze {
+  
+    .screensMaxMobile(
+    {
+    // wide
+    height: 360px;
+  },
+    {
+    // narrow
+    height: 270px;
+  },{},{}, 
+    {
+    // iPhone-wide
+    height: 165px;
+  },{},{},
+    {
+    // extra-narrow
+    height: 220px;
+  }
+  );
+  }
+.add-space-for-mobile-base {
 	
 		.screensMaxMobile(
 		{
 		// wide
-		height: 360px;
+		height: 160px;
 	},
 		{
 		// narrow
-		height: 270px;
+		height: 170px;
 	},{},{}, 
 		{
 		// iPhone-wide
-		height: 165px;
+		height: 65px;
 	},{},{},
 		{
 		// extra-narrow
-		height: 220px;
+		height: 120px;
 	}
 	);
 	}
@@ -213,4 +234,8 @@ input#typeans {
 
 h1.syntax {
   margin: 0 auto;
+}
+
+.mobile .tag {
+  display: none;
 }
