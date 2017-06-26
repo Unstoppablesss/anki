@@ -7,4 +7,5 @@ dist/themes/selectable/js/external/anki_source/
 src/assets/less/components/images/
 src/assets/less/components/css/
 *.mdd_out
+*.map
 dist/themes/selectable/card-01-for-test.html
