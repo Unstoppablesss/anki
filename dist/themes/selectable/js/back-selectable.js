@@ -1,38 +1,46 @@
+/*******************************************
+ * values of variables from the front side Selectable:
+ * 		sequentian, result, 
+ * function from the front side Selectable:
+ * 		shuffle()
+ *
+ * It work only without {{FrontSide}} field on the back template.
+ ******************************************/
 // var sequential = ["'7'", "<i>7</i>", "Syntax Error", "<i>Nan</i>"]; //to comment for Anki
-// var result = [3]; //to comment for Anki
+// var result = [1]; //to comment for Anki
 /*=================================================
 =            DIVIDE BY ( "|") FOR TEST            =
 =================================================*/
 // var examples = $("#selectbox")[0];
+// var letters = ["A", "B", "C", "D", "E", "F", 'G'];
 // //result.length = sequential.length;
 // function divide(target) {
 // 	var re = /\s*\|\s*/;
 // 	var choices = target.innerHTML;
-// 	// boxes = choices.split(re); //to uncomment for Anki
-// 	// boxes = shuffle(boxes);    //to uncomment for Anki
+// 	// boxes = choices.split(re); //to uncomment for Anki back side
+// 	// boxes = shuffle(boxes);    //to uncomment for Anki back side
 // 	boxes = sequential;
 // 	var list = "";
 // 	list = list + '<ul id="selectable">';
 // 	for (var i = 0; i < boxes.length; i++) {
-// 		list = list + '<li class="ui-widget-content">' + boxes[i] + '</li>';
+// 		list = list + '<li class="ui-widget-content">' + '<strong class="abc">' + letters[i] + '</strong>' + '<div class="div-content">' + boxes[i] + '</div>'+ '</li>';
 // 	}
 // 	list = list + "</ul>";
 // 	target.innerHTML = list;
 // }
-/*=====  End of DIVIDE BY ( "|") FOR TEST  ======*/
+// /*=====  End of DIVIDE BY ( "|") FOR TEST  ======*/
 var title = document.querySelector('.title');
-// var toggle = document.getElementById('toggle');
 var rightAnswers = document.querySelector('.right-answers');
 var button = document.getElementsByTagName('button')[0];
-// rightAnswers.style.display = 'none';
 
 /*================================================
-=            DIVIDE BY ( "|") TO ANKI            =
+=            DIVIDE BY ( "|") TO ANKI            = to uncomment for Anki back side
 ================================================*/
 var examples = $("#selectbox")[0];
 if (!result) {
 	var result = [];
 }
+var letters = ["A", "B", "C", "D", "E", "F", 'G'];
 
 function divide(target) {
 	var re = /\s*\|\s*/;
@@ -43,12 +51,12 @@ function divide(target) {
 	var list = "";
 	list = list + '<ul id="selectable">';
 	for (var i = 0; i < boxes.length; i++) {
-		list = list + '<li class="ui-widget-content">' + boxes[i] + '</li>';
+		list = list + '<li class="ui-widget-content">' + '<strong class="abc">' + letters[i] + '</strong>' + '<div class="div-content">' + boxes[i] + '</div>' + '</li>';
 	}
 	list = list + "</ul>";
 	target.innerHTML = list;
 }
-/*=====  End of DIVIDE BY ( "/") TO ANKI  ======*/
+/*=====  End of DIVIDE BY ( "|") TO ANKI  ======*/
 divide(examples);
 /*----------------------------*/
 window.scrollTo(0, 0);
@@ -76,32 +84,43 @@ divide(examples);
 var correctArr = [];
 var italic;
 var correct = 0;
-for (var i = 0; i < $(".ui-widget-content").length; i++) {
-	italic = $(".ui-widget-content")[i].innerHTML.match(/\<([\/i]*)\>/);
+var selectbox = $("#selectbox.back");
+var abcGutter = $(".ui-widget-content");
+// var abcGutter = $(".abc");
+var rowsOfSelectbox = $("#selectable li");
+// var abcGutter = $(".ui-widget-content");
+for (var i = 0; i < abcGutter.length; i++) {
+	italic = rowsOfSelectbox[i].innerHTML.match(/\<([\/i]*)\>/);
 	console.log("count");
 	if (italic) {
 		correct++;
 		console.log("italic");
 		correctArr.push(i);
 		if (i === newResult[i]) {
-			$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#2bb427";
-			$(".ui-widget-content")[newResult[i]].style.color = "white";
+			abcGutter[newResult[i]].classList.add("active-right");
+			rowsOfSelectbox[newResult[i]].classList.add("active-selecting");
+			// rowsOfSelectbox[newResult[i]].style.backgroundColor = "white";
 			var m = i;
 			ok = false;
 		};
 	}
-	else if (italic === null && $(".ui-widget-content")[newResult[i]] !== undefined) {
-		$(".ui-widget-content")[newResult[i]].style.backgroundColor = "#d52834";
-		$(".ui-widget-content")[newResult[i]].style.color = "white";
+	else if (italic === null && abcGutter[newResult[i]] !== undefined) {
+		abcGutter[newResult[i]].classList.add("active-wrong");
+		rowsOfSelectbox[newResult[i]].classList.add("active-selecting");
+		// rowsOfSelectbox[newResult[i]].style.backgroundColor = "white";
 	}
 }
 
 function sortRightAnwers() {
 	for (var i = 0; i < result.length; i++) {
 		if (result[i] !== correctArr[i] || result.length !== correct) {
-			for (var i = 0; i < result.length; i++) {
-				$(".ui-widget-content")[result[i]].style.backgroundColor = "#d52834";
-				$(".ui-widget-content")[result[i]].style.color = "white";
+			for (var i = 0; i < result.length; i++) { //ui-widget-content active-right active-selecting active-wrong
+				if (abcGutter[result[i]].classList[1] === "active-right") {
+					abcGutter[result[i]].classList.remove("active-right");
+				}
+				rowsOfSelectbox[result[i]].classList.add("active-selecting");
+				// rowsOfSelectbox[result[i]].style.backgroundColor = "white";
+				abcGutter[result[i]].classList.add("active-wrong");
 			}
 			ok = true;
 		}
@@ -112,41 +131,33 @@ if (result) {
 }
 
 if (result && ok) {
-	$("#selectbox.back")[0].classList.add('active');
-	$("#selectbox.back")[0].addEventListener('click', function () {
-		$("#selectbox.back")[0].style.border = "dashed 0.2em #d52834";
+	selectbox[0].classList.add('active-selectbox');
+	selectbox[0].addEventListener('click', function () {
+		selectbox[0].style.border = "dashed 0.15em #F39814";
 			if (this.className !== "back"){
-				this.classList.toggle('active');
-					for (var i = 0; i < $(".ui-widget-content").length; i++) {
-						$(".ui-widget-content")[i].style.backgroundColor = null;
-						$(".ui-widget-content")[i].style.color = "black";
+				this.classList.toggle('active-selectbox');
+					for (var i = 0; i < abcGutter.length; i++) {
+						// if (rowsOfSelectbox[i].classList[1] === "active-selecting") {
+							rowsOfSelectbox[i].classList.remove("active-selecting");
+					// }
+						// rowsOfSelectbox[i].style.backgroundColor = null;
+						abcGutter[i].classList.remove("active-wrong");
 				}
 					for (var i = 0; i < correctArr.length; i++) {
-						$(".ui-widget-content")[correctArr[i]].style.backgroundColor = "#2bb427";
-						$(".ui-widget-content")[correctArr[i]].style.color = "white";
+						rowsOfSelectbox[correctArr[i]].classList.add("active-selecting");
+						// rowsOfSelectbox[correctArr[i]].style.backgroundColor = "white";
+						abcGutter[correctArr[i]].classList.toggle("active-right");
+						abcGutter[correctArr[i]].classList.remove("active-wrong");
 				}
-		} else{
-				for (var i = 0; i < $(".ui-widget-content").length; i++) {
-						$(".ui-widget-content")[i].style.backgroundColor = null;
-						$(".ui-widget-content")[i].style.color = "black";
+		} 
+		else{
+				for (var i = 0; i < abcGutter.length; i++) {
+						rowsOfSelectbox[i].classList.remove("active-selecting");
+						// rowsOfSelectbox[i].style.backgroundColor = null;
+						abcGutter[i].classList.remove("active-right");
 					}
 				sortRightAnwers();
-				this.classList.toggle('active');
+				this.classList.toggle('active-selectbox');
 		}
 	});
 }
-// var rightAnswer = [];
-// for (var i = 0; i < correctArr.length; i++) {
-// 	rightAnswer.push($(".ui-widget-content")[correctArr[i]].textContent);
-// }
-// var list2 = "";
-// list2 += "<ul id='selectable'>";
-// for (var i = 0; i < rightAnswer.length; i++) {
-// 	list2 += "<li class='ui-widget-content'>" + rightAnswer[i] + '</li>';
-// }
-// list2 += "</ul>";
-// if (lengthRe === 0) {
-// 	toggle.style.display = "inline-block";
-// 	rightAnswers.style.display = "block";
-// }
-// $(".right-answers")[0].innerHTML = list2;

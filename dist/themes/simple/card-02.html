@@ -14,7 +14,7 @@
 
 {{#✔ What does this syntax do?}}
 <div id="front" class="container card-2 pb">
-  <h1 class="syntax">
+    <h1 class="syntax">
     {{^☆ Syntax}}Syntax{{/☆ Syntax}}
     {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
 
@@ -22,15 +22,35 @@
     {{^----✄-- Hide on front: Syntax (inline code)}}
       <code>{{☆ Syntax (inline code)}}</code>
     {{/----✄-- Hide on front: Syntax (inline code)}}
-  </h1>
-  {{^----✄-- Hide on front: Sample (code block or image)}}
+  </h1> {{^----✄-- Hide on front: Sample (code block or image)}}
+    <button id="toggle">Show Sample code</button>
     <div class="sample-code mb">
-      {{☆ Sample (code block or image)}}
+        {{☆ Sample (code block or image)}}
     </div>
-  {{/----✄-- Hide on front: Sample (code block or image)}}
-  <p class="title">{{✔ What does this syntax do?}}</p>
+    {{/----✄-- Hide on front: Sample (code block or image)}}
+    <p class="title">{{✔ What does this syntax do?}}</p>
 </div>
 {{/✔ What does this syntax do?}}
+<script>
+var title = document.querySelector('.title');
+var toggle = document.getElementById('toggle');
+var sampleCode = document.querySelector('.sample-code');
+var button = document.getElementsByTagName('button')[0];
+
+sampleCode.style.display = 'none';
+toggle.addEventListener('click', function() {
+    if (sampleCode.style.display == 'none') {
+        toggle.textContent = 'Hide Sample code';
+        sampleCode.style.display = 'block';
+        button.style.background = '#508abc';
+
+    } else {
+        toggle.textContent = 'Show Sample code';
+        sampleCode.style.display = 'none';
+        button.style.background = '#52bab3';
+    }
+});
+</script>
 
 <!-- ========================================== -->
 

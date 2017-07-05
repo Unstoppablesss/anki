@@ -45,12 +45,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/dist\/deck\/TH-JS-basic-(cloze).apkg": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/dist\/deck\/TH-JS-basic-(cloze).apkg",
-		"oF": 0
-		},
 	"\/dist\/deck\/TH-JS-basic-(selectable).apkg": {
 		"ft": 8192,
 		"oA": 2,
@@ -91,6 +85,16 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/dist\/themes\/assets\/css\/reference-main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/themes\/assets\/css\/reference-main-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/dist\/themes\/assets\/img\/marked-app-console.png": {
 		"ft": 32768,
 		"iS": 47487,
@@ -127,6 +131,14 @@
 		"oA": 2,
 		"oAP": "\/dist\/themes\/cloze\/card-01.html",
 		"oF": 0
+		},
+	"\/dist\/themes\/cloze\/Cloze_preview.gif": {
+		"ft": 4194304,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/dist\/themes\/cloze\/Cloze_preview.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/dist\/themes\/cloze\/js\/app_type.js": {
 		"ft": 64,
@@ -206,6 +218,15 @@
 		"oAP": "\/dist\/themes\/selectable\/card-01.html",
 		"oF": 0
 		},
+	"\/dist\/themes\/selectable\/js\/back-selectable-copy.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/themes\/selectable\/js\/back-selectable-copy-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/dist\/themes\/selectable\/js\/back-selectable.js": {
 		"ft": 64,
 		"mi": 1,
@@ -233,11 +254,20 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/dist\/themes\/selectable\/js\/external\/jquery\/jquery-ui-1.12.1-min.js": {
+	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-Selectable-Scroll-add.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jquery-ui-1.12.1-min-min.js",
+		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-Selectable-Scroll-add-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-1.12.1-min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-1.12.1-min-min.js",
 		"oF": 1,
 		"sC": 0,
 		"tS": 0
@@ -251,11 +281,20 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/dist\/themes\/selectable\/js\/external\/jquery\/jquery-v3.2.1-min.js": {
+	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-v3.2.1-min.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jquery-v3.2.1-min-min.js",
+		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-v3.2.1-min-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/dist\/themes\/selectable\/js\/front-selectable-copy.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/themes\/selectable\/js\/front-selectable-copy-min.js",
 		"oF": 1,
 		"sC": 0,
 		"tS": 0
@@ -307,7 +346,7 @@
 		},
 	"\/dist\/themes\/selectable\/Selectable_preview.gif": {
 		"ft": 4194304,
-		"iS": 3015561,
+		"iS": 2159695,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/Selectable_preview.gif",
 		"oF": 0,
@@ -1096,22 +1135,6 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/src\/assets\/less\/css\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/assets\/less\/css\/main-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/src\/assets\/less\/css\/main.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/assets\/less\/css\/main.css.map",
-		"oF": 0
-		},
 	"\/src\/assets\/less\/main.less": {
 		"aP": 1,
 		"bl": 0,
@@ -1121,7 +1144,7 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/src\/assets\/less\/css\/main.css",
+		"oAP": "\/dist\/themes\/assets\/css\/main.css",
 		"oF": 2,
 		"oS": 0,
 		"rU": 0,
@@ -1214,23 +1237,6 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/src\/assets\/less\/theme\/pre copy.less": {
-		"aP": 1,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/src\/assets\/less\/theme\/pre copy.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
 	"\/src\/assets\/less\/theme\/pre.less": {
 		"aP": 1,
 		"bl": 0,
@@ -1241,6 +1247,23 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/theme\/pre.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/src\/assets\/less\/theme\/pre_copy.less": {
+		"aP": 1,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/src\/assets\/less\/theme\/pre_copy.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,

@@ -17,7 +17,25 @@
 #front {
 
 }
-.syntax {}
+.syntax {
+    width: 85%;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        width: 100%;
+        padding: 0;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
+}
+
 
 .sample-code {
 	font-size: @font-size-large-em;
@@ -46,8 +64,10 @@
 //	padding: 0;
 //	padding-top: .5em;},
 
-p.title {
-   margin: 0 auto;
+p.title, 
+p.title ~ p,
+p.title ~ div {
+   margin: 7px auto;
    font-size: 2.5rem;
    width: 80%;
    padding-bottom: 1em;
@@ -59,6 +79,8 @@ p {
 	font-size: 2rem;
 }
 .title,
+.title ~ p,
+.title ~ div,
 .puzzle-hint {
 //	.to-rem (
 //		font-size, @font-size-xxx-large
@@ -84,26 +106,4 @@ p {
 }
 .gamb-wrap-front {
 	left: 10%;
-}
-.gutter {
-  color: white; 
-  width: 80%;
-//  padding: 0 .2em; 
-  margin: 0 auto;
-      .screensMaxMobile(
-    {
-// wide
-  },
-    {
-// narrow
-    width: 100%;
-  },
-    {},
-    {}, 
-    {},
-    {},
-    {},
-    {
-}
-  );
 }

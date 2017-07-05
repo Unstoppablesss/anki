@@ -2,14 +2,12 @@
      Selectable theme
    - Fields:   ★ Selectable choices:
      - variant-1 | variant-2 | variant-3
-   - Card: What's the answer?
+   - Card: Selectable
    - Info: Choose from the offered answers 
    - Key:  ★ Required
            ☆ Optional (recommended)
            ✎ Optional (Notes)
 =============================================== -->
-
-
 
 <!-- ==========================================
 MAIN JQUERY
@@ -21,8 +19,6 @@ MAIN JQUERY
 end MAIN JQUERY
 =============================================== -->
 
-
-
 <!-- ==========================================
 JQUERY UI 
 Includes: widget.js, widgets/selectable.js, widgets/mouse.js
@@ -33,8 +29,6 @@ Includes: widget.js, widgets/selectable.js, widgets/mouse.js
 <!-- ==========================================
 end JQUERY UI
 =============================================== -->
-
-
 
 <!-- ==========================================
 JQUERY UI Touch Punch
@@ -48,12 +42,30 @@ end JQUERY UI Touch Punch
 
 <div id="front" class="container card-1 pb">
   <h1 class="syntax">
-<div class="gutter js">
+
+<!-- ==============================================
+    change "js" class of gutter for diferent color theme
+    "css"
+    "devel"
+    "typograph"
+    "py" 
+    "html"
+    "wordpress"
+=============================================== -->
+<div id="front" class="container card-1 pb">
+  <h1 class="syntax">
+<div class="gutter js p-">
     {{^☆ Syntax}}Syntax{{/☆ Syntax}}
     {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
 </div>
-
-<div id="selectbox">   
+<div class="arrow-main grid-item 1/8">
+    <svg id="more-arrows">
+      <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+      <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+      <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+    </svg>
+</div>
+<div id="selectbox"> 
  {{★ Selectable choices}}
 </div>
 
@@ -62,12 +74,15 @@ end JQUERY UI Touch Punch
 
 <p class = "title"> {{★ Title}} </p>  
 
-  {{#☆ Sample (code block or image)}}<button id="toggle">Show Sample code</button>
-  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>{{/☆ Sample (code block or image)}}
+{{#☆ Sample (code block or image)}}
+<button id="toggle">Show Sample code</button>
+  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div> 
+{{/☆ Sample (code block or image)}}
 
 <span class="ui-icon ui-icon-arrowthick-1-n"> </span>
 
-<div class = "add-space-for-mobile"></div>
+<div class="tag">{{^Tags}}{{Tags}}{{/Tags}}</div>
+<div class = "add-space-for-mobile-base"></div>
 
 <!-- ==========================================
 FRONT-SELECTABLE JS
@@ -80,6 +95,32 @@ end FRONT-SELECTABLE JS
 =============================================== -->
 
 
+<!--=================================================
+=            Buttor toggle hide/show of {{☆ Sample (code block or image)}}            =
+==================================================-->
+
+<script>
+var title = document.querySelector('.title');
+var toggle = document.getElementById('toggle');
+var sampleCode = document.querySelector('.sample-code');
+var button = document.getElementsByTagName('button')[0];
+
+sampleCode.style.display = 'none';
+toggle.addEventListener('click', function() {
+    if (sampleCode.style.display == 'none') {
+        toggle.textContent = 'Hide Sample code';
+        sampleCode.style.display = 'block';
+        button.style.background = '#508abc';
+
+    } else {
+        toggle.textContent = 'Show Sample code';
+        sampleCode.style.display = 'none';
+        button.style.background = '#52bab3';
+    }
+});
+</script>
+
+<!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
 
 <!-- =====================[Back of card]===================== -->
 
@@ -97,25 +138,30 @@ end MAIN JQUERY
 =============================================== -->
 
   <h1 class="syntax">
-<div class="gutter js">
+<div class="gutter devel p-">
 {{^☆ Syntax}}Syntax{{/☆ Syntax}}
 {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
 </div>
-<div id="selectbox">   
+<div id="selectbox" class="back">   
  {{★ Selectable choices}}
 </div>
 
  </h1>
 
+  <div class="right-answers mb"></div>
+
 <div id="select-result" />   
-<br><br>
+
 <div id="answer" class="container card-1 pt+">
   <div class="box-code">{{★ Key point (code block or image)}}</div>
-  <div class="box-notes">{{★ Key point notes}}</div>
-  <div class="footer mt pb">
+  <div class="box-notes">{{☆ Key point notes}}</div>
+  <div class="footer mt pb tl wrapper">
     {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
   </div>
 </div>
+
+<div class="tag">{{#Tags}}{{Tags}}{{/Tags}}</div>
+<div class = "add-space-for-mobile-base"></div>
 
 <!-- ==========================================
 BACK-SELECTABLE JS

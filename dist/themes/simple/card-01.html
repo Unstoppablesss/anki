@@ -7,20 +7,82 @@
            ☆ Optional (recommended)
            ✎ Optional (Notes)
 =============================================== -->
-
 <div id="front" class="container card-1 pb">
-  <h1 class="syntax">
-    {{^☆ Syntax}}Syntax{{/☆ Syntax}}
-    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+<h1 class="syntax">
+
+<!-- ==============================================
+    change "js" class of .gutter for diferent color theme
+    "css"
+    "devel"
+    "typograph"
+    "py" 
+    "html"
+    "wordpress"
+=============================================== -->
+<div class="gutter js tl pl+ p">
+    {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+    <br>
+</div>
     <code>{{☆ Syntax (inline code)}}</code>
   </h1>
-  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>
-  <p class="title">{{★ Title}}</p>
+    <p class="title"> {{★ Title}} </p>
+    {{#☆ Sample (code block or image)}}
+    <button id="toggle">Show Sample code</button>
+    <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>
+    {{/☆ Sample (code block or image)}}
+</div>
+{{^Tags}}{{Tags}}{{/Tags}}
+
+
+<!--=================================================
+=            Buttor toggle hide/show of {{hint}}            =
+==================================================-->
+
+<script>
+var title = document.querySelector('.title');
+var toggle = document.getElementById('toggle');
+var sampleCode = document.querySelector('.sample-code');
+var button = document.getElementsByTagName('button')[0];
+
+sampleCode.style.display = 'none';
+toggle.addEventListener('click', function() {
+    if (sampleCode.style.display == 'none') {
+        toggle.textContent = 'Hide Sample code';
+        sampleCode.style.display = 'block';
+        button.style.background = '#508abc';
+
+    } else {
+        toggle.textContent = 'Show Sample code';
+        sampleCode.style.display = 'none';
+        button.style.background = '#52bab3';
+    }
+});
+</script>
+
+<!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
+
+
+
+<!-- =====================BACK SIDE===================== -->
+    <h1 class="syntax">
+
+<!-- ==============================================
+    change "js" class of .gutter for diferent color theme
+    "css"
+    "devel"
+    "typograph"
+    "py" 
+    "html"
+    "wordpress"
+=============================================== -->
+<div class="gutter js tl pl+ p">
+    {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+    <br>
 </div>
 
-<!-- ========================================== -->
-
-{{FrontSide}}
+    <code>{{☆ Syntax (inline code)}}</code>
+  </h1>
+    <p class="title"> {{★ Title}} </p>
 
 <div id="answer" class="container card-1 pt+">
   <div class="box-code">{{★ Key point (code block or image)}}</div>
@@ -29,3 +91,5 @@
     {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
   </div>
 </div>
+
+{{#Tags}}{{Tags}}{{/Tags}}

@@ -7,12 +7,13 @@
 
 @theme-light-base:         #000; // != Not in use
 
-@theme-dark-op:        #602a7d; // Purple
+// @theme-dark-op:        #602a7d; // Purple
 
 @theme-light-int:       #e75905; // Orange
 @theme-light-str:       #497d00; // Green
 
 @theme-dark-key:       #4271ae; // Blue
+@theme-dark-key2:       #de9b26; // yellow
 
 @theme-light-var:          #000; // Black
 @theme-light-comment:      #ccc; // Grey
@@ -29,6 +30,22 @@ code {
 	padding: 0;
 	border: none;
 	background: #ddd;
+  width: 85%;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        width: 100%;
+        padding: 0;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
 
   &:empty {
     margin: 0;

@@ -28,10 +28,13 @@ html {
 /* --------------- Center content vertically on page ---------------------- */
 
 .browserhide {}
-
+.reviewerhide {
+  display: block !important;
+}
 body {
 	font-size: 20px;
 	z-index: 100;
+  background: #E5E7E8;
 //	background-image: $background-gradient;
 //	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -75,7 +78,7 @@ body {
 
 hr {
 //	width: 100%;
-	height: 2px;
+	height: 1px;
 	border: 0;
 //	background: $hr-gradient;
 }
@@ -242,27 +245,49 @@ h1.syntax {
 /*==============================
 =            Gutter            =
 ==============================*/
+.gutter {
+  color: white; 
+  width: 100%;
+//  padding: 0 .2em; 
+  margin: 0 auto;
+      .screensMaxMobile(
+    {
+// wide
+  },
+    {
+// narrow
+    width: 100%;
+  },
+    {},
+    {}, 
+    {},
+    {},
+    {},
+    {
+}
+  );
+}
 
 .gutter.js {
-  background: #bc5575; 
+  background: @color-gutter-js; 
 }
 .gutter.py {
-  background: #ea8eb0; 
+  background: @color-gutter-py; 
 }
 .gutter.css {
-  background: #4078a9; 
+  background: @color-gutter-css; 
 }
-.gutter .devel {
-  background: #667990; 
+.gutter.devel {
+  background: @color-gutter-devel; 
 }
-.gutter .html {
-  background: #51accf; 
+.gutter.html {
+  background: @color-gutter-html; 
 }
-.gutter .wordPress {
-  background: #8689c5; 
+.gutter.wordPress {
+  background: @color-gutter-wordpress; 
 }
-.gutter .typograph {
-  background: #de9b26; 
+.gutter.typograph {
+  background: @color-gutter-typograph; 
 }
 
 /*=====  End of Gutter  ======*/
