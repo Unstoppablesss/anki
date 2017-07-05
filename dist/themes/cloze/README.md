@@ -36,7 +36,8 @@ You'll recognise some of these fields from the [Puzzle](../simple/README.md) and
 #### ★ Syntax (code block {cloze})
 
 - The actual function or symbol, i.e. `len()`.
-- This will be wrapped in `<code>`.
+- This will be wrapped in `<code>`
+
 ![Preview gif](./Cloze_preview.gif)
 
 #### ☆ Sample (code block or image)
