@@ -11,3 +11,4 @@ src/assets/less/components/css/
 *.code-workspace
 *.codekit3
 dist/themes/selectable/card-01-for-test.html
+*.codekit3

@@ -7,31 +7,41 @@
 		"uuidString": "684FCDC2-7D44-49B8-A6A6-C28867EC881C"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "26148",
 "files": {
 	"\/.editorconfig": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.editorconfig",
 		"oF": 0
 		},
 	"\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/anki-master.code-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/anki-master.code-workspace",
+		"oF": 0
+		},
 	"\/dist\/deck\/anki-theme-1.0.0-production-ready.apkg": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/deck\/anki-theme-1.0.0-production-ready.apkg",
 		"oF": 0
 		},
 	"\/dist\/deck\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -45,10 +55,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/dist\/deck\/TH-JS-basic-(cloze).apkg": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/deck\/TH-JS-basic-(cloze).apkg",
+		"oF": 0
+		},
 	"\/dist\/deck\/TH-JS-basic-(selectable).apkg": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/deck\/TH-JS-basic-(selectable).apkg",
+		"oF": 0
+		},
+	"\/dist\/deck\/TH-Python-basic.apkg": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/deck\/TH-Python-basic.apkg",
 		"oF": 0
 		},
 	"\/dist\/themes\/assets\/css\/main.css": {
@@ -62,16 +87,17 @@
 		"oS": 0
 		},
 	"\/dist\/themes\/assets\/css\/main.css.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/assets\/css\/main.css.map",
 		"oF": 0
 		},
 	"\/dist\/themes\/assets\/css\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -117,8 +143,19 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/dist\/themes\/assets\/js\/highlight-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/themes\/assets\/js\/highlight-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/dist\/themes\/assets\/js\/highlight.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/assets\/js\/highlight-min.js",
@@ -127,6 +164,7 @@
 		"tS": 0
 		},
 	"\/dist\/themes\/cloze\/card-01.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/cloze\/card-01.html",
@@ -142,6 +180,7 @@
 		},
 	"\/dist\/themes\/cloze\/js\/app_type.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/cloze\/js\/min\/app_type-min.js",
@@ -151,6 +190,7 @@
 		},
 	"\/dist\/themes\/cloze\/js\/min\/app_type-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/cloze\/js\/min\/app_type-min-min.js",
@@ -159,10 +199,10 @@
 		"tS": 0
 		},
 	"\/dist\/themes\/cloze\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -177,22 +217,24 @@
 		"uCM": 0
 		},
 	"\/dist\/themes\/puzzle\/card-01.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/puzzle\/card-01.html",
 		"oF": 0
 		},
 	"\/dist\/themes\/puzzle\/card-02.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/puzzle\/card-02.html",
 		"oF": 0
 		},
 	"\/dist\/themes\/puzzle\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -207,28 +249,22 @@
 		"uCM": 0
 		},
 	"\/dist\/themes\/selectable\/card-01-for-test.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/selectable\/card-01-for-test.html",
 		"oF": 0
 		},
 	"\/dist\/themes\/selectable\/card-01.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/selectable\/card-01.html",
 		"oF": 0
 		},
-	"\/dist\/themes\/selectable\/js\/back-selectable-copy.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/themes\/selectable\/js\/back-selectable-copy-min.js",
-		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/dist\/themes\/selectable\/js\/back-selectable.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/min\/back-selectable-min.js",
@@ -238,6 +274,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/external\/anki_source\/jQuery-v1.5-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/external\/anki_source\/jQuery-v1.5-min-min.js",
@@ -247,6 +284,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/external\/anki_source\/Sizzle-CSS-Selector-Engine-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/external\/anki_source\/Sizzle-CSS-Selector-Engine-min-min.js",
@@ -254,17 +292,9 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-Selectable-Scroll-add.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-Selectable-Scroll-add-min.js",
-		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-1.12.1-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-1.12.1-min-min.js",
@@ -274,6 +304,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-Touch-Punch-0.2.3-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-UI-Touch-Punch-0.2.3-min-min.js",
@@ -283,6 +314,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-v3.2.1-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/dist\/themes\/selectable\/js\/external\/jquery\/jQuery-v3.2.1-min-min.js",
@@ -290,17 +322,9 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/dist\/themes\/selectable\/js\/front-selectable-copy.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/themes\/selectable\/js\/front-selectable-copy-min.js",
-		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/dist\/themes\/selectable\/js\/front-selectable.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/min\/front-selectable-min.js",
@@ -310,6 +334,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/min\/back-selectable-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/min\/back-selectable-min-min.js",
@@ -319,6 +344,7 @@
 		},
 	"\/dist\/themes\/selectable\/js\/min\/front-selectable-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/js\/min\/front-selectable-min-min.js",
@@ -327,10 +353,10 @@
 		"tS": 0
 		},
 	"\/dist\/themes\/selectable\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -350,25 +376,27 @@
 		"oA": 0,
 		"oAP": "\/dist\/themes\/selectable\/Selectable_preview.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/dist\/themes\/simple\/card-01.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/simple\/card-01.html",
 		"oF": 0
 		},
 	"\/dist\/themes\/simple\/card-02.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dist\/themes\/simple\/card-02.html",
 		"oF": 0
 		},
 	"\/dist\/themes\/simple\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -394,16 +422,17 @@
 		"q": 100
 		},
 	"\/project.cson": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/project.cson",
 		"oF": 0
 		},
 	"\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -418,6 +447,7 @@
 		"uCM": 0
 		},
 	"\/README.mdd_out": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/README.mdd_out",
@@ -425,6 +455,7 @@
 		},
 	"\/src\/assets\/js\/highlight.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/src\/assets\/js\/highlight-min.js",
@@ -442,9 +473,9 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/base\/cardinal.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -461,7 +492,7 @@
 		"oAP": "\/src\/assets\/less\/base\/mixins.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -478,7 +509,7 @@
 		"oAP": "\/src\/assets\/less\/base\/reset.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -495,7 +526,7 @@
 		"oAP": "\/src\/assets\/less\/base\/variables.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -512,7 +543,7 @@
 		"oAP": "\/src\/assets\/less\/components\/buttons.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -528,60 +559,70 @@
 		"oS": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_base.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_base.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_hamburgers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_hamburgers.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_index-hamb.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/0eb1c6d60e575c1275bdccd559a5a17a3882f69e\/_index-hamb.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/116035452101acba53177209687ce2c162d911ae\/_arrowalt-r.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/116035452101acba53177209687ce2c162d911ae\/_arrowalt-r.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/116035452101acba53177209687ce2c162d911ae\/_arrowalt.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/116035452101acba53177209687ce2c162d911ae\/_arrowalt.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/16590db50abc013d4227c83ad818175b9094dbf9\/_arrow-r.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/16590db50abc013d4227c83ad818175b9094dbf9\/_arrow-r.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_base.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_base.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_hamburgers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_hamburgers.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_index.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/_index.scssc",
 		"oF": 0
 		},
 	"\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/hamburgers.scssc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/src\/assets\/less\/components\/hamburgergs\/.sass-cache\/8ff1dd9235b06c5d1a91aa081eeb5c1901fc521f\/hamburgers.scssc",
@@ -1128,9 +1169,9 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/src\/assets\/less\/components\/UI-selectable.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1142,10 +1183,10 @@
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/dist\/themes\/assets\/css\/main.css",
-		"oF": 2,
+		"oF": 0,
 		"oS": 0,
 		"rU": 0,
 		"sI": 0,
@@ -1164,7 +1205,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/answer.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1181,7 +1222,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/back.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1198,7 +1239,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/base.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1215,7 +1256,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/code.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1232,7 +1273,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/front.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1249,24 +1290,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/pre.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/src\/assets\/less\/theme\/pre_copy.less": {
-		"aP": 1,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/src\/assets\/less\/theme\/pre_copy.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1283,7 +1307,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/puzzle.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1300,7 +1324,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/pygments.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1317,7 +1341,7 @@
 		"oAP": "\/src\/assets\/less\/theme\/typogpaphy.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1334,7 +1358,7 @@
 		"oAP": "\/src\/assets\/less\/utilities\/curly-brackets.css",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1359,7 +1383,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/anchors.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1376,7 +1400,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/blockquotes.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1393,7 +1417,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/code.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1409,6 +1433,7 @@
 		"oS": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/base\/debug.css.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/debug.css.map",
@@ -1426,7 +1451,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/debug.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1443,7 +1468,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/embedded-content.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1460,7 +1485,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/form-elements.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1477,7 +1502,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/headings.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1494,7 +1519,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/horizontal-rules.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1511,7 +1536,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/lists.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1528,7 +1553,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/antialiasing.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1545,7 +1570,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/clearing.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1562,7 +1587,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/font-face.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1579,7 +1604,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/media-queries.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1596,7 +1621,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/momentum-scrolling.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1613,7 +1638,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/text-truncate.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1630,7 +1655,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/to-rem.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1647,7 +1672,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/mixins\/vertically-centered.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1664,7 +1689,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/normalize.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1681,16 +1706,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/print.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/base\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1716,7 +1741,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/reset.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1733,7 +1758,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/root.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1750,7 +1775,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/tables.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1767,7 +1792,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/text-elements.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1784,7 +1809,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/base\/variables.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1809,16 +1834,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/cardinal.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/CHANGELOG.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1844,7 +1869,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/components\/boxes.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1861,7 +1886,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/components\/buttons.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1878,7 +1903,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/components\/forms.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -1895,16 +1920,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/components\/lists.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/components\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1930,13 +1955,14 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/components\/tables.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/gulpfile.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/gulpfile.js",
@@ -1945,6 +1971,7 @@
 		"tS": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/index.html",
@@ -1962,16 +1989,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/layout\/grids.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/layout\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1997,16 +2024,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/layout\/wrappers.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/LICENSE.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2021,10 +2048,10 @@
 		"uCM": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2050,7 +2077,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/display.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2067,7 +2094,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/floats.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2084,7 +2111,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/font-sizes.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2101,7 +2128,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/margins.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2118,7 +2145,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/paddings.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2135,16 +2162,16 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/positions.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2170,7 +2197,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/text-alignment.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2187,7 +2214,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/vertical-alignment.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2204,7 +2231,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/visually-hidden.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2221,7 +2248,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/widths.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2238,7 +2265,7 @@
 		"oAP": "\/src\/assets\/packages\/bower_components\/cardinal\/utilities\/z-index.less",
 		"oF": 0,
 		"oS": 0,
-		"rU": 0,
+		"rU": 1,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
@@ -2277,6 +2304,7 @@
 		},
 	"\/src\/assets\/packages\/bower_components\/highlightjs\/highlight.pack.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/src\/assets\/packages\/bower_components\/highlightjs\/highlight.pack.js",
@@ -2286,6 +2314,7 @@
 		},
 	"\/src\/assets\/packages\/bower_components\/highlightjs\/highlight.pack.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/highlightjs\/highlight.pack.min.js",
@@ -2294,22 +2323,24 @@
 		"tS": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/highlightjs\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/highlightjs\/LICENSE",
 		"oF": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/highlightjs\/Makefile": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/src\/assets\/packages\/bower_components\/highlightjs\/Makefile",
 		"oF": 0
 		},
 	"\/src\/assets\/packages\/bower_components\/highlightjs\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3730,6 +3761,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -3737,6 +3772,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -3834,6 +3873,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -3850,9 +3893,17 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -3910,9 +3961,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -3942,6 +3993,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -3951,14 +4006,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -3981,6 +4028,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -4526,6 +4577,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -4594,6 +4649,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -4633,6 +4692,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -5046,7 +5109,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -5079,6 +5143,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -5120,7 +5185,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -5134,7 +5200,7 @@
 		"disableJavascript": 0,
 		"ieCompatibility": 1,
 		"outputStyle": 0,
-		"relativeURLS": 0,
+		"relativeURLS": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
@@ -5152,13 +5218,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -5167,7 +5233,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -5187,7 +5254,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -5215,7 +5283,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -5262,9 +5331,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
