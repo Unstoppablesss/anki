@@ -1,68 +1,84 @@
 window.scrollTo(0, 0);
 /*--------------------DIVIDE BY ( "|")-------------------------*/
-	function shuffle(array) {
-		var currentIndex = array.length
-			, temporaryValue, randomIndex;
-		// While there remain elements to shuffle...
-		while (0 !== currentIndex) {
-			// Pick a remaining element...
-			randomIndex = Math.floor(Math.random() * currentIndex);
-			currentIndex -= 1;
-			// And swap it with the current element.
-			temporaryValue = array[currentIndex];
-			array[currentIndex] = array[randomIndex];
-			array[randomIndex] = temporaryValue;
-		}
-		return array;
-	}
+  function shuffle(array) {
+    var currentIndex = array.length,
+        temporaryValue, randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
 var sequential;
 
 var examples = $("#selectbox")[0];
+/**
+ * REGEX: excludes "[A-Z] at the beginning of each line"
+ * @type {[type]}
+ */
+var match = examples.innerHTML;
+match = match.replace(/([A-Z])(<span\sclass="Apple-tab-span"\sstyle="white-space:pre">\s<\/span>)(.+?)/g, " | $3");
+if (match !== examples.innerHTML) {
+match = match.replace(/\|/m, "");
+examples.innerHTML = match;
+}
+
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 function divide(target){
-	target.innerHTML = target.innerHTML.replace(/(\s*\<span class="Apple-tab-span" style="white-space:pre"> <\/span>\s*)/g, "");
-	target.innerHTML = target.innerHTML.replace(/(\s*\|\s*)/g, "</div>|");
-	target.innerHTML = target.innerHTML.replace(/\s*<\/div>\|\<\/div>s*/g, "</div>|");
-	var re = /\s*\|\s*/;
+  target.innerHTML = target.innerHTML.replace(/(\s*\/<span class="Apple-tab-span" style="white-space:pre"> <\/span>\s*)/g, "");
+  target.innerHTML = target.innerHTML.replace(/(>\|<)/g, "> | <");
+  target.innerHTML = target.innerHTML.replace(/(&nbsp;\|&nbsp;)/g, " | ");
+  target.innerHTML = target.innerHTML.replace(/(>\|&nbsp;)/g, "> | ");
+  target.innerHTML = target.innerHTML.replace(/(>\|\s)/g, "> | ");
+  target.innerHTML = target.innerHTML.replace(/(>&nbsp;\|\s)/g, "> | ");
+  target.innerHTML = target.innerHTML.replace(/(\s*\s\|\s\s*)/g, "</div> | ");
+  target.innerHTML = target.innerHTML.replace(/\s*<\/div>\|\/<\/div>s*/g, "</div> | ");
+  var re = /\s*\s\|\s\s*/;
 var choices = target.innerHTML;
-	var boxes = choices.split(re);
-	boxes = shuffle(boxes);
-	sequential = boxes;
+  var boxes = choices.split(re);
+  boxes = shuffle(boxes);
+  sequential = boxes;
 var list = "";
 list = list + '<ul id="selectable">';
-			for (var i = 0; i < boxes.length; i++) {
-			list = list + '<li class="ui-widget-content"><strong class="abc">' + letters[i] + '</strong><div class="div-content">' + boxes[i] + '</div></li>';
-		}
+      for (var i = 0; i < boxes.length; i++) {
+      list = list + '<li class="ui-widget-content"><strong class="abc">' + letters[i] + '</strong><div class="div-content">' + boxes[i] + '</div></li>';
+    }
 list = list + "</ul>";
 target.innerHTML = list;
 }
 
-	divide(examples);
+  divide(examples);
 
 /*--------------------SELECTABLE-------------------------*/
-	var result;
+  var result;
   var arrayNum;
-	$(function () {
-		$("a").bind( "mousedown touchstart", function() {
-			// e.preventDefault();
-			event.stopPropagation();
+  $(function () {
+    $("a").bind( "mousedown touchstart", function() {
+      // e.preventDefault();
+      event.stopPropagation();
 });
-		$("#selectable").bind( "mousedown touchstart", function(e) {
-			e.preventDefault();
-			e.metaKey = true;
+    $("#selectable").bind( "mousedown touchstart", function(e) {
+      e.preventDefault();
+      e.metaKey = true;
 }).selectable({
-			filter: "li",
+      filter: "li",
       selecting: function(event,ui) {
-      	ui.selecting.classList.toggle("active-selecting");
+        ui.selecting.classList.toggle("active-selecting");
       },
       unselecting: function(event,ui) {
-      	ui.unselecting.classList.toggle("active-selecting");
+        ui.unselecting.classList.toggle("active-selecting");
       },
       selected: function( event, ui ) {
         console.log(ui.selected);
         function whiteLine(){
-	      };
-	      setTimeout(whiteLine, 10);
+        }
+        setTimeout(whiteLine, 10);
         ui.selected.children[0].classList.toggle("active-abc");
         $('.ui-selected').removeClass('ui-selected');
       },
@@ -81,5 +97,5 @@ target.innerHTML = list;
           }).get();
           console.log("result = " + result);
       }
-		});
-	});
+    });
+  });

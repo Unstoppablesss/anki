@@ -85,7 +85,7 @@ span2.style.height = '1.5em';
 textbox.style.fontSize = '1em'; 
 textbox.style.textAlign = 'left';
 textbox.style.minWidth = typeansWidth;
-resizable(textbox,0.52); // change it for different fonts
+resizable(textbox,0.62); // change it for different fonts
 span2.style.overflow = 'hidden';
 span2.style.textOverflow = 'ellipsis';
     textbox.style.textAlign = 'left';

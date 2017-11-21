@@ -1,10 +1,10 @@
 /*******************************************
  * values of variables from the front side Selectable:
- * 		sequentian, result, 
+ * 		sequentian, result,
  * function from the front side Selectable:
  * 		shuffle()
  *
- * It work only without {{FrontSide}} field on the back template.
+ * It works without {{FrontSide}} field on the back template only.
  ******************************************/
 // var sequential = ["'7'", "<i>7</i>", "Syntax Error", "<i>Nan</i>"]; //to comment for Anki
 // var result = [1]; //to comment for Anki
@@ -40,10 +40,22 @@ var examples = $("#selectbox")[0];
 if (!result) {
 	var result = [];
 }
-var letters = ["A", "B", "C", "D", "E", "F", 'G'];
+/**
+ * REGEX: excludes "[A-Z] at the beginning of each line for copy from teamtreehouse.com"
+ * @type {[type]}
+ */
+var match = examples.innerHTML;
+match = match.replace(/([A-Z])(<span\sclass="Apple-tab-span"\sstyle="white-space:pre">\s<\/span>)(.+?)/g, " | $3");
+if (match !== examples.innerHTML) {
+match = match.replace(/\|/m, "");
+examples.innerHTML = match;
+}
+/*----------  end  ----------*/
+
+var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 function divide(target) {
-	var re = /\s*\|\s*/;
+	var re = /\s*\s\|\s\s*/;
 	var choices = target.innerHTML;
 	var boxes = choices.split(re);
 	boxes = shuffle(boxes);
@@ -76,7 +88,9 @@ for (var z = 0; z < lengthRe; z++) {
 		}
 		else {
 			console.log("by");
-			if (typeof (newResult[i]) !== "number") newResult[i] = "";
+			if (typeof (newResult[i]) !== "number") {
+				newResult[i] = "";
+			}
 		}
 	}
 }
@@ -102,7 +116,7 @@ for (var i = 0; i < abcGutter.length; i++) {
 			// rowsOfSelectbox[newResult[i]].style.backgroundColor = "white";
 			var m = i;
 			ok = false;
-		};
+		}
 	}
 	else if (italic === null && abcGutter[newResult[i]] !== undefined) {
 		abcGutter[newResult[i]].classList.add("active-wrong");
@@ -132,7 +146,7 @@ if (result) {
 
 if (result && ok) {
 	selectbox[0].classList.add('active-selectbox');
-	selectbox[0].addEventListener('click', function () {
+	selectbox[0].onclick = function () {
 		selectbox[0].style.border = "dashed 0.15em #F39814";
 			if (this.className !== "back"){
 				this.classList.toggle('active-selectbox');
@@ -149,7 +163,7 @@ if (result && ok) {
 						abcGutter[correctArr[i]].classList.toggle("active-right");
 						abcGutter[correctArr[i]].classList.remove("active-wrong");
 				}
-		} 
+		}
 		else{
 				for (var i = 0; i < abcGutter.length; i++) {
 						rowsOfSelectbox[i].classList.remove("active-selecting");
@@ -159,5 +173,5 @@ if (result && ok) {
 				sortRightAnwers();
 				this.classList.toggle('active-selectbox');
 		}
-	});
+	};
 }

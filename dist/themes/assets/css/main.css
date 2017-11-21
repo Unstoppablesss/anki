@@ -172,7 +172,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 /**
@@ -271,7 +272,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -293,6 +295,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -358,7 +361,8 @@ th {
  * @link http://cbrac.co/RQrDL5
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /**
  * Inheriting the `box-sizing` property is a better practice.
@@ -368,7 +372,8 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 /**
  * Remove margins, paddings, and borders from HTML elements.
@@ -545,7 +550,6 @@ h6,
 .h4,
 .h5,
 .h6,
-hr,
 menu,
 ol,
 pre,
@@ -813,11 +817,12 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospaceCourier, monospace;
+  font-family: monospace;
   /* 1 */
   /*px*/ font-size: 28px;
   /*rem*/ font-size: 1.75rem;
   font-style: normal;
+  font-weight: 100;
   color: #222222;
 }
 code {
@@ -843,7 +848,8 @@ kbd {
   /*px*/ border-radius: 5px;
   /*rem*/ border-radius: 0.3125rem;
   background-color: #f8f8f8;
-  box-shadow: 0 1px 0 #dedede, inset 0 0 0 1px #ffffff;
+  -webkit-box-shadow: 0 1px 0 #dedede, inset 0 0 0 1px #ffffff;
+          box-shadow: 0 1px 0 #dedede, inset 0 0 0 1px #ffffff;
 }
 pre {
   position: relative;
@@ -1029,7 +1035,8 @@ input[type="file"] {
  *    @link http://cbrac.co/1xgTke2
  */
 input[type="search"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1104,7 +1111,8 @@ td {
     color: #000000 !important;
     /* 1 */
     background: transparent !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: none !important;
   }
   @page {
@@ -1189,15 +1197,15 @@ td {
  * Give `.box` the appearance of being raised above its surrounding area.
  */
 .box-raise {
-  /*px*/ box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-  /*rem*/ box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  /*px*/ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  /*rem*/ -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15); box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
 }
 /**
  * Give `.box` the appearance of being sunken beneath its surrounding area.
  */
 .box-sink {
-  /*px*/ box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) inset;
-  /*rem*/ box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15) inset;
+  /*px*/ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) inset; box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) inset;
+  /*rem*/ -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15) inset; box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15) inset;
 }
 /* ========================================================================== *\
    Objects -> Buttons ($objects-buttons)
@@ -1230,8 +1238,8 @@ td {
 .btn:active,
 .btn.is-active {
   background-color: #d9d9d9;
-  /*px*/ box-shadow: 0 0 8px rgba(0, 0, 0, 0.25) inset;
-  /*rem*/ box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25) inset;
+  /*px*/ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25) inset; box-shadow: 0 0 8px rgba(0, 0, 0, 0.25) inset;
+  /*rem*/ -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25) inset; box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25) inset;
 }
 .btn:active:focus {
   outline: 0 none;
@@ -1242,7 +1250,8 @@ td {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.50;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-shadow: none;
 }
 /**
@@ -7038,6 +7047,7 @@ body {
           align-items: center;
   text-align: center;
   width: 100%;
+  height: 100vh;
   max-width: 1440px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -7057,6 +7067,7 @@ body {
 hr {
   height: 1px;
   border: 0;
+  background-color: #bc5575;
 }
 .normalize {
   margin: 0 auto;
@@ -7170,7 +7181,8 @@ input {
   border-bottom: 0.15rem solid white;
   max-width: 99.99% !important;
   margin: -0.25em auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*--------------- input focus---------------------- */
 #typeans:focus,
@@ -7197,7 +7209,8 @@ input {
 #typeans21:focus {
   border-color: #336699;
   outline: 0;
-  box-shadow: 0 1px 14px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1px 14px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 1px 14px rgba(255, 255, 255, 0.3);
   border: none;
   border-bottom: 0.2rem solid white;
   border-bottom-left-radius: .1em;
@@ -7283,8 +7296,7 @@ h1.syntax {
   }
 }
 p.title,
-p.title ~ p,
-p.title ~ div {
+p.title ~ p {
   margin: 7px auto;
   font-size: 2.5rem;
   width: 80%;
@@ -7384,8 +7396,10 @@ p {
   height: -moz-min-content;
   height: min-content;
   margin: 0 auto;
-  box-sizing: border-box;
-  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 14px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 14px rgba(0, 0, 0, 0.12);
   font-weight: 100;
   font-size: 1.3em;
   line-height: 120%;
@@ -7416,6 +7430,98 @@ code#typeans {
     -o-tab-size: 4;
        tab-size: 4;
 }
+/*=====================================*/
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: url('_GothamRounded-Bold.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-BoldItalic";
+  src: url('_GothamRounded-BoldItalic.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url('_GothamRounded-Book.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-BookItalic";
+  src: url('_GothamRounded-BookItalic.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: url('_GothamRounded-Light.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-LightItalic";
+  src: url('_GothamRounded-LightItalic.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: url('_GothamRounded-Medium.ttf');
+}
+@font-face {
+  font-family: "GothamRounded-MediumItalic";
+  src: url('_GothamRounded-MediumItalic.ttf');
+}
+html {
+  font-family: "GothamRounded-Book";
+}
+.mac html,
+.win html {
+  font-family: "Gotham Rounded";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'GothamRounded-Book';
+}
+.win h1,
+.mac h1,
+.win h2,
+.mac h2,
+.win h3,
+.mac h3,
+.win h4,
+.mac h4,
+.win h5,
+.mac h5,
+.win h6,
+.mac h6 {
+  font-family: "Gotham Rounded";
+  font-weight: 500;
+}
+/*==================================
+=            selectable            =
+==================================*/
+#selectable {
+  font-family: 'GothamRounded-Light';
+  font-weight: 300;
+  font-style: normal;
+}
+.abc {
+  font-family: "GothamRounded-Bold";
+  font-weight: 500;
+}
+.win .abc,
+.mac .abc {
+  font-family: "Gotham Rounded";
+  font-weight: 500;
+}
+.div-content {
+  font-size: 1.3rem;
+  line-height: 2.5em;
+  font-family: 'GothamRounded-Light';
+  font-style: normal;
+}
+.mac .div-content,
+.win .div-content {
+  font-family: 'Gotham Rounded Light';
+  font-weight: 100;
+}
+/*=====  End of selectable  ======*/
 code#typeans {
   font-family: "Inconsolata" !important;
   font-size: 1.5em;
@@ -7463,7 +7569,7 @@ code#typeans {
   border: 1px solid white;
 }
 input#typeans {
-  color: ghostwhite;
+  color: unset;
 }
 input#typeans[title] {
   line-height: 1em;
@@ -7517,14 +7623,16 @@ code#typeans {
   display: inline-block;
   border-collapse: separate;
   border-spacing: 2px;
-  box-shadow: 0 0 1em #b9f0b7;
+  -webkit-box-shadow: 0 0 1em #b9f0b7;
+          box-shadow: 0 0 1em #b9f0b7;
   margin: 10px auto;
   cursor: pointer;
   -webkit-transition: .15s;
   transition: .15s;
 }
 #selectbox.back.active-selectbox {
-  box-shadow: 0 0 1em #f7d2d5;
+  -webkit-box-shadow: 0 0 1em #f7d2d5;
+          box-shadow: 0 0 1em #f7d2d5;
 }
 @media (max-width: 1025px) {
 }
@@ -7555,11 +7663,12 @@ code#typeans {
 #selectable {
   display: block;
   overflow: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #576366;
-  text-decoration: none solid #576366;
+  -webkit-text-decoration: none solid #576366;
+          text-decoration: none solid #576366;
   -webkit-column-rule-color: #576366;
-     -moz-column-rule-color: #576366;
           column-rule-color: #576366;
   -webkit-perspective-origin: 165px 160px;
           perspective-origin: 165px 160px;
@@ -7569,8 +7678,7 @@ code#typeans {
   border: 0px none #576366;
   /* style | variant | weight | stretch | size/line-height | family */
   font-size: 1em;
-  line-height: 1.5em;
-  font-family: Helvetica;
+  line-height: 1.8;
   list-style: none outside none;
   margin: 0px;
   outline: #576366 none 0px;
@@ -7579,9 +7687,9 @@ code#typeans {
 }
 #selectable li {
   background-color: #F1F2F2;
-  text-decoration: none solid #576366;
+  -webkit-text-decoration: none solid #576366;
+          text-decoration: none solid #576366;
   -webkit-column-rule-color: #576366;
-     -moz-column-rule-color: #576366;
           column-rule-color: #576366;
   -webkit-perspective-origin: 165px 40px;
           perspective-origin: 165px 40px;
@@ -7615,7 +7723,8 @@ code#typeans {
 #selectable li.active-selecting {
   background: #fff;
   border-color: #d4d9dd;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset;
+          box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset;
 }
 @media (max-width: 1025px) {
 }
@@ -7714,15 +7823,16 @@ code#typeans {
   border: 1px dotted black;
 }
 .abc {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #7b8b8e;
   padding: .5em;
   left: 0;
   text-align: center;
-  text-decoration: none solid #7b8b8e;
+  -webkit-text-decoration: none solid #7b8b8e;
+          text-decoration: none solid #7b8b8e;
   width: auto;
   -webkit-column-rule-color: #7b8b8e;
-     -moz-column-rule-color: #7b8b8e;
           column-rule-color: #7b8b8e;
   -webkit-perspective-origin: 20px 20px;
           perspective-origin: 20px 20px;
@@ -7734,8 +7844,6 @@ code#typeans {
   /* style | variant | weight | stretch | size/line-height | family */
   font-size: 2rem;
   line-height: 1.5rem;
-  font-family: Helvetica;
-  font-weight: 500;
   list-style: none outside none;
   outline: #7b8b8e none 0px;
   -webkit-transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
@@ -7785,6 +7893,10 @@ code#typeans {
 }
 @media (max-width: 321px) {
 }
+.mac .ui-selectable li:hover .abc.active-abc {
+  color: #F39814;
+  border-color: #F39814;
+}
 .abc.active-right {
   color: #2bb427;
   border-color: #2bb427;
@@ -7793,18 +7905,23 @@ code#typeans {
   color: #d52834;
   border-color: #d52834;
 }
+.mac .ui-selectable li:hover .abc {
+  border-color: #4e5a64;
+  color: #4e5a64;
+}
 .div-content {
   display: inline-block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 10px;
   width: 85%;
   color: #576366;
   cursor: pointer;
   text-align: left;
-  text-decoration: none solid #576366;
+  -webkit-text-decoration: none solid #576366;
+          text-decoration: none solid #576366;
   vertical-align: middle;
   -webkit-column-rule-color: #576366;
-     -moz-column-rule-color: #576366;
           column-rule-color: #576366;
   -webkit-perspective-origin: 115px 24.5px;
           perspective-origin: 115px 24.5px;
@@ -7812,16 +7929,13 @@ code#typeans {
           transform-origin: 115px 24.5px;
   caret-color: #576366;
   border: 0px none #576366;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-  font-family: Helvetica;
   list-style: none outside none;
   outline: #576366 none 0px;
 }
 @media (max-width: 1025px) {
   .div-content {
-    font-size: .8em;
-    line-height: 1em;
+    font-size: .9em;
+    line-height: 1.3em;
   }
 }
 @media (max-width: 769px) {
@@ -7844,7 +7958,8 @@ code#typeans {
 #selectable > li > i,
 #selectable > li > div > i,
 #selectable > li > div > div > i,
-#selectable > li > div > div > div > i {
+#selectable > li > div > div > div > i,
+#selectable > li > div > div > pre > i {
   font-style: normal;
   z-index: 0;
 }
@@ -7954,7 +8069,7 @@ code {
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
   margin: 0;
-  padding: 0;
+  padding: 0.1em 0.3em;
   border: none;
   background: #ddd;
   width: 85%;
@@ -8028,7 +8143,7 @@ pre code,
 pre .hljs {
   margin-bottom: 0;
   text-align: left;
-  color: #c8ced1;
+  color: #2aa198;
   background: #384047;
   opacity: .99;
 }
@@ -8042,7 +8157,7 @@ pre code em {
 }
 pre code s,
 pre code u {
-  color: #DFD7A9;
+  color: #b58900;
 }
 pre code span,
 pre code sup {
@@ -8083,7 +8198,7 @@ pre code mark {
 }
 /* Literal */
 .codehilite .n {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name */
 .codehilite .o {
@@ -8139,11 +8254,11 @@ pre code mark {
 }
 /* Keyword.Reserved */
 .codehilite .kt {
-  color: #5FA7CD;
+  color: #5fcf80;
 }
 /* Keyword.Type */
 .codehilite .ld {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.Date */
 .codehilite .m {
@@ -8151,7 +8266,7 @@ pre code mark {
 }
 /* Literal.Number */
 .codehilite .s {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String */
 .codehilite .na {
@@ -8187,19 +8302,19 @@ pre code mark {
 }
 /* Name.Function */
 .codehilite .nl {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Label */
 .codehilite .nn {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Namespace */
 .codehilite .nx {
-  color: #839496;
+  color: #2aa198;
 }
 /* Name.Other */
 .codehilite .py {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Property */
 .codehilite .nt {
@@ -8207,7 +8322,7 @@ pre code mark {
 }
 /* Name.Tag */
 .codehilite .nv {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Variable */
 .codehilite .ow {
@@ -8215,7 +8330,7 @@ pre code mark {
 }
 /* Operator.Word */
 .codehilite .w {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Text.Whitespace */
 .codehilite .mf {
@@ -8235,19 +8350,19 @@ pre code mark {
 }
 /* Literal.Number.Oct */
 .codehilite .sb {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Backtick */
 .codehilite .sc {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Char */
 .codehilite .sd {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Doc */
 .codehilite .s2 {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Double */
 .codehilite .se {
@@ -8255,43 +8370,43 @@ pre code mark {
 }
 /* Literal.String.Escape */
 .codehilite .sh {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Heredoc */
 .codehilite .si {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Interpol */
 .codehilite .sx {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Other */
 .codehilite .sr {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Regex */
 .codehilite .s1 {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Single */
 .codehilite .ss {
-  color: #DFD7A9;
+  color: #b58900;
 }
 /* Literal.String.Symbol */
 .codehilite .bp {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Builtin.Pseudo */
 .codehilite .vc {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Variable.Class */
 .codehilite .vg {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Variable.Global */
 .codehilite .vi {
-  color: #c8ced1;
+  color: #2aa198;
 }
 /* Name.Variable.Instance */
 .codehilite .il {
@@ -8478,4 +8593,4 @@ li button {
   bottom: 0;
   -webkit-transform: translate3d(8px, 10px, 0) rotate(-45deg) scale(0.7, 1);
   -webkit-transition: bottom 0.1s ease, -webkit-transform 0.15s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
-/*# sourceMappingURL=main.css.map */
+

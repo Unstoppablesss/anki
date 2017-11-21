@@ -8,4 +8,6 @@ src/assets/less/components/images/
 src/assets/less/components/css/
 *.mdd_out
 *.map
+*.code-workspace
+*.codekit3
 dist/themes/selectable/card-01-for-test.html
