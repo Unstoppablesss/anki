@@ -1,19 +1,53 @@
 /*=====================================*/
-@font-face{font-family:"GothamRounded-Bold";src:url('_GothamRounded-Bold.ttf');}
-@font-face{font-family:"GothamRounded-BoldItalic";src:url('_GothamRounded-BoldItalic.ttf');}
-@font-face { font-family: "GothamRounded-Book"; src: url('_GothamRounded-Book.ttf'); }
-@font-face { font-family:"GothamRounded-BookItalic";src:url('_GothamRounded-BookItalic.ttf'); }
-@font-face{font-family:"GothamRounded-Light";src:url('_GothamRounded-Light.ttf');}
-@font-face{font-family:"GothamRounded-LightItalic";src:url('_GothamRounded-LightItalic.ttf');}
-@font-face{font-family:"GothamRounded-Medium";src:url('_GothamRounded-Medium.ttf');}
-@font-face{font-family:"GothamRounded-MediumItalic";src:url('_GothamRounded-MediumItalic.ttf');}
-// @font-face { font-family: myfont; src: url('_arial.ttf'); }
 
-html { 
-	font-family: "GothamRounded-Book";
+@font-face {
+    font-family: "GothamRounded-Bold";
+    src: url('_GothamRounded-Bold.ttf');
 }
-.mac html, .win html { 
-	font-family: "Gotham Rounded";
+
+@font-face {
+    font-family: "GothamRounded-BoldItalic";
+    src: url('_GothamRounded-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-Book";
+    src: url('_GothamRounded-Book.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-BookItalic";
+    src: url('_GothamRounded-BookItalic.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-Light";
+    src: url('_GothamRounded-Light.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-LightItalic";
+    src: url('_GothamRounded-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-Medium";
+    src: url('_GothamRounded-Medium.ttf');
+}
+
+@font-face {
+    font-family: "GothamRounded-MediumItalic";
+    src: url('_GothamRounded-MediumItalic.ttf');
+}
+
+// @font-face { font-family: myfont; src: url('_arial.ttf'); }
+html {
+    font-family: "GothamRounded-Book";
+}
+
+.mac html,
+.win html {
+    font-family: "Gotham Rounded";
 }
 
 h1,
@@ -22,17 +56,25 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'GothamRounded-Book';
+    font-family: 'GothamRounded-Book';
 }
-.win h1,.mac h1,
-.win h2,.mac h2,
-.win h3,.mac h3,
-.win h4,.mac h4,
-.win h5,.mac h5,
-.win h6,.mac h6 {
-	font-family: "Gotham Rounded";
-	font-weight: 500;
+
+.win h1,
+.mac h1,
+.win h2,
+.mac h2,
+.win h3,
+.mac h3,
+.win h4,
+.mac h4,
+.win h5,
+.mac h5,
+.win h6,
+.mac h6 {
+    font-family: "Gotham Rounded";
+    font-weight: 500;
 }
+
 /*==================================
 =            selectable            =
 ==================================*/
@@ -44,139 +86,158 @@ h6 {
 }
 
 .abc {
-	font-family: "GothamRounded-Bold";
-	font-weight: 500;
+    font-family: "GothamRounded-Bold";
+    font-weight: 500;
 }
-.win .abc, .mac .abc {
-	font-family: "Gotham Rounded";
-	font-weight: 500;
+
+.win .abc,
+.mac .abc {
+    font-family: "Gotham Rounded";
+    font-weight: 500;
 }
 
 .div-content {
-	font-size: 1.3rem; //14px
-	line-height: 2.5em; //24px
-  font-family: 'GothamRounded-Light';
-  // font-weight: 100;
-  font-style: normal;
+    font-size: 1.3rem; //14px
+    line-height: 2.5em; //24px
+    font-family: 'GothamRounded-Light'; // font-weight: 100;
+    font-style: normal;
 }
-.mac .div-content, .win .div-content {
-	font-family: 'Gotham Rounded Light';
-	font-weight: 100;
+
+.mac .div-content,
+.win .div-content {
+    font-family: 'GothamRounded-Light';
+    font-weight: 100;
 }
+
 /*=====  End of selectable  ======*/
 
-
 code#typeans {
-	font-family: "Inconsolata" !important;
-	font-size: 1.5em;
-
-		.screensMaxMobile(
-		{
-// wide
-		font-size: 1em;
-	},
-		{
-// narrow
-		font-size: .875em;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{
-		// extra-narrow
-		font-size: .575em;
-	}
-	);
+    font-family: "Inconsolata" !important;
+    font-size: 1.5em;
+    .screensMaxMobile( {
+        // wide
+        font-size: 1em;
+    }
+    ,
+        {
+        // narrow
+        font-size: .875em;
+    }
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+        {
+        // extra-narrow
+        font-size: .575em;
+    }
+    );
 }
 
 .win code#typeans,
 .mac code#typeans {
-	font-family: "Inconsolata" !important;
-	font-size: 1.5em;
-	letter-spacing: .02em;
-
-		.screensMaxMobile(
-		{
-// wide
-		font-size: 1em;
-	},
-		{
-// narrow
-		font-size: .575em;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{}
-	);
+    font-family: "Inconsolata" !important;
+    font-size: 1.5em;
+    letter-spacing: .02em;
+    .screensMaxMobile( {
+        // wide
+        font-size: 1em;
+    }
+    ,
+        {
+        // narrow
+        font-size: .575em;
+    }
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    ,
+    {}
+    );
 }
 
 #typeans {
-	text-align: left;
+    text-align: left;
 }
 
 .cloze {
-	text-align: center;
-	line-height: 0;
-//	color: firebrick;
-	padding: 0 1px;
-	border: 1px solid white;
+    text-align: center;
+    line-height: 0; //	color: firebrick;
+    padding: 0 1px;
+    border: 1px solid white;
 }
 
-
 input#typeans {
-	color: unset;
+    color: unset;
 }
 
 // .codehilite > input#typeans {
 // 	color: ghostwhite;
 // }
-
-input#typeans[title]{
-	line-height: 1em;
+input#typeans[title] {
+    line-height: 1em;
 }
 
 code#typeans {
-	line-height: 1.5;
-	text-align: center;
-//	color: $color-prim;
+    line-height: 1.5;
+    text-align: center; //	color: $color-prim;
 }
 
 .td_back {
-	text-align: center;
+    text-align: center;
 }
+
 //
 // Pygments
 // =============================================
 #typeans span {
-	background: white;
-	text-align: center;
+    background: white;
+    text-align: center;
 }
+
 .ipad .typeBad {
-	background-color: red;
+    background-color: red;
 }
+
 .typeBad {
-	color: #dc322f;
-	font-weight: normal;
+    color: #dc322f;
+    font-weight: normal;
 }
 
 .typeMissed,
 .typePass {
-	color: #268bd2;
-	font-weight: normal;
+    color: #268bd2;
+    font-weight: normal;
 }
 
 .typeGood {
-	color: #2ed85a;
-	font-weight: normal;
+    color: #2ed85a;
+    font-weight: normal;
 }
 
+.box-notes:not(:empty) {
+    font-size: 1.6rem;
+}
 
-
-.box-notes:not(:empty){
-	font-size: 1.6rem;
+code,
+kbd,
+pre,
+samp {
+    // .to-rem(font-size,
+    // @font-size-xx-large-em);
+    font-size: 1.5rem;
 }

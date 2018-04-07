@@ -13,8 +13,8 @@
 // wide
 	},
 		{
-// narrow
-		width: 85%;
+		width: 96%;
+		margin: 0 auto;
 	},
 		{},
 		{}, 
@@ -156,10 +156,9 @@
 		{},
 		{}, 
 		{},
-		{}
 		{},
-		{
-	}
+		{},
+		{}
 	);
 		&.active-selecting {
 			background: #fff;
@@ -194,7 +193,9 @@
 						 }
 					 );
 		}
-		&.active-selecting > .div-content {
+		&.active-selecting > .div-content,
+		&.active-wrong > .div-content,
+		&.active-right > .div-content {
 			.screensMaxMobile(
 							 {
 						// wide
@@ -389,7 +390,7 @@
 			 }
 		 );
 	}
-	.mac .ui-selectable li:hover &.active-abc {
+	.mac #selectable li:hover &.active-abc {
 		color: #F39814;
 		border-color: #F39814;
 	}
@@ -402,7 +403,7 @@
 		border-color: #d52834;
 	}
 }
-.mac .ui-selectable li:hover .abc{
+.mac .selectable-front li:hover .abc{
 	border-color: #4e5a64;
 	color: #4e5a64;
 }
@@ -457,8 +458,11 @@
 
 #selectable > li > i,
 #selectable > li > div > i,
+#selectable > li > p > i,
 #selectable > li > div > div > i, 
+#selectable > li > div > p > i, 
 #selectable > li > div > div > div > i, 
+#selectable > li > div > div > p > i, 
 #selectable > li > div > div > pre > i {
 	font-style: normal;
 	z-index: 0;

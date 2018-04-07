@@ -12,12 +12,38 @@
 //	{font-size: 95%}
 //	);
 //}
-
-
-#front {
-
+div#front {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
 .syntax {
+    width: 85%;
+    max-width: 1440px;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        width: 100%;
+        padding: 0;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
+}
+
+.codehilite>pre {
+    font-size: 1.5rem;
+}
+
+.sample-code {
+    font-size: @font-size-large-em;
+    margin: 0 auto;
     width: 85%;
     .screensMaxMobile( {
         // wide
@@ -36,75 +62,55 @@
     );
 }
 
-
-.sample-code {
-	font-size: @font-size-large-em;
-	margin: 0 auto;
-	width: 85%;
-
-		.screensMaxMobile(
-		{
-// wide
-	},
-		{
-// narrow
-		width: 100%;
-		padding: 0;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{
-}
-	);
-}
 //	{width: 100%;
 //	padding: 0;
 //	padding-top: .5em;},
-
-p.title, 
-p.title ~ p
-// p.title ~ div 
-{
-   margin: 7px auto;
-   font-size: 2.5rem;
-   width: 80%;
-   padding-bottom: 1em;
-   text-align: left;
-   line-height: 1.2em
+p.title,
+p.title~p // p.title ~ div 
+    {
+    margin: 7px auto;
+    font-size: 2.5rem;
+    width: 80%;
+    padding-bottom: 1em;
+    text-align: left;
+    line-height: 1.2em
 }
 
 p {
-	font-size: 2rem;
+    font-size: 2rem;
 }
+
 .title,
-.title ~ p,
-.title ~ div,
+.title~p,
+.title~div,
 .puzzle-hint {
-//	.to-rem (
-//		font-size, @font-size-xxx-large
-//	);
-  color: @color-gray-dark;
-  font-style: italic;
-	font-size: @font-size-xxx-large-em;
+    //	.to-rem (
+    //		font-size, @font-size-xxx-large
+    //	);
+    color: @color-gray-dark;
+    font-style: italic;
+    font-size: @font-size-xxx-large-em;
 }
 
 // Cloze =======================================
 // - If {{✔ What does this syntax do?}} is
 //   displayed, hide {{★ Title}}
-
-.title + .title {
-  display: none;
+.title+.title {
+    display: none;
 }
 
 .gamb-wrap-front,
 .gamb-wrap-back {
-	position: absolute;
-	top: 50px;
-	
+    position: absolute;
+    top: 50px;
 }
+
 .gamb-wrap-front {
-	left: 10%;
+    left: 10%;
 }
+
+// pre,
+// pre code,
+// pre .hljs {
+//     color: black !important;
+// }

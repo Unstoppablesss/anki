@@ -1,17 +1,276 @@
-
 .gradient (@startColor: #eee, @endColor: white) {
-	background-color: @startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-	background: -webkit-linear-gradient(top, @startColor, @endColor);
-//	background: -moz-linear-gradient(top, @startColor, @endColor);
-//	background: -ms-linear-gradient(top, @startColor, @endColor);
-//	background: -o-linear-gradient(top, @startColor, @endColor);
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor); //	background: -moz-linear-gradient(top, @startColor, @endColor);
+    //	background: -ms-linear-gradient(top, @startColor, @endColor);
+    //	background: -o-linear-gradient(top, @startColor, @endColor);
 }
+
 .horizontal-gradient (@startColor: #eee, @endColor: white) {
- 	background-color: @startColor;
-	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
-//	background-image: -moz-linear-gradient(left, @startColor, @endColor);
-//	background-image: -ms-linear-gradient(left, @startColor, @endColor);
-//	background-image: -o-linear-gradient(left, @startColor, @endColor);
+    background-color: @startColor;
+    background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+    background-image: -webkit-linear-gradient(left, @startColor, @endColor); //	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+    //	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+    //	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+//
+// Media query mixins for various screen sizes.
+// 
+// @link http://cbrac.co/1tB2TXR
+//
+// Extra-small and up
+.screen-xs-min(@rules) {
+    @media (min-width: @screen-xs-min) {
+        @rules();
+    }
+}
+
+// Extra-small and down (deprecated)
+.screen-xs-max(@rules) {
+    @media (max-width: @screen-xs-max) {
+        @rules();
+    }
+}
+
+// Extra-small only
+.screen-xs(@rules) {
+    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+        @rules();
+    }
+}
+
+// Small and up
+.screen-sm-min(@rules) {
+    @media (min-width: @screen-sm-min) {
+        @rules();
+    }
+}
+
+// Small and down (deprecated)
+.screen-sm-max(@rules) {
+    @media (max-width: @screen-sm-max) {
+        @rules();
+    }
+}
+
+// Small only
+.screen-sm(@rules) {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        @rules();
+    }
+}
+
+// Medium and up
+.screen-md-min(@rules) {
+    @media (min-width: @screen-md-min) {
+        @rules();
+    }
+}
+
+// Medium and down (deprecated)
+.screen-md-max(@rules) {
+    @media (max-width: @screen-md-max) {
+        @rules();
+    }
+}
+
+// Medium only
+.screen-md(@rules) {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+        @rules();
+    }
+}
+
+// Large and up
+.screen-lg-min(@rules) {
+    @media (min-width: @screen-lg-min) {
+        @rules();
+    }
+}
+
+// Large and down (deprecated)
+.screen-lg-max(@rules) {
+    @media (max-width: @screen-lg-max) {
+        @rules();
+    }
+}
+
+// Large only
+.screen-lg(@rules) {
+    @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+        @rules();
+    }
+}
+
+// Extra-large and up
+.screen-xl-min(@rules) {
+    @media (min-width: @screen-xl-min) {
+        @rules();
+    }
+}
+
+// Extra-large and down (deprecated)
+.screen-xl-max(@rules) {
+    @media (max-width: @screen-xl-max) {
+        @rules();
+    }
+}
+
+// Extra-large only
+.screen-xl(@rules) {
+    @media (min-width: @screen-xl-min) and (max-width: @screen-xl-max) {
+        @rules();
+    }
+}
+
+// Extra-extra-large and up
+.screen-xxl-min(@rules) {
+    @media (min-width: @screen-xxl-min) {
+        @rules();
+    }
+}
+
+//
+// Chain media queries together
+//
+// Usage:
+//
+// .my-element {
+//   .screen({
+//     color: red;    // xs and up
+//   },{
+//     color: green;  // sm and up
+//   },{
+//     color: yellow; // md and up
+//   },{
+//     color: purple; // lg and up
+//   },{
+//     color: blue;   // xl and up
+//   },{
+//     color: orange; // xxl and up
+//   });
+// }
+//
+// @link http://cbrac.co/1tB2TXR
+//
+// mobile brk variable
+//@brk-extra-narrow 				
+//@brk-iPhone6s-portrait  	
+//@brk-iPhone6sPlus-portrait
+//@brk-iPhone-wide   				
+//@brk-iPhone6s-wide   			
+//@brk-iPhone6sPlus-wide 		
+//@brk-narrow 							
+//@brk-wide   							
+// Usage 
+//		.screensMaxMobile(
+//		{
+//// wide
+//	},
+//		{
+//// narrow
+//	},
+//		{
+//// iPhone6sPlus-wide
+//	},
+//		{
+//// iPhone6s-wide
+//	}, 
+//		{
+//		// iPhone-wide
+//	},
+//		{
+//		// iPhone6sPlus-portrait
+//	},
+//		{
+//		// iPhone6s-portrait
+//	},
+//		{
+//		// extra-narrow
+//	}
+//	);
+// wide
+.mobile-wide(@rules) {
+    @media (max-width: @brk-wide) {
+        @rules();
+    }
+}
+
+// narrow
+.mobile-narrow(@rules) {
+    @media (max-width: @brk-narrow) {
+        @rules();
+    }
+}
+
+// iPhone6sPlus-wide
+.mobile-iPhone6sPlus-wide(@rules) {
+    @media (max-width: @brk-iPhone6sPlus-wide) {
+        @rules();
+    }
+}
+
+// iPhone6s-wide
+.mobile-iPhone6s-wide(@rules) {
+    @media (max-width: @brk-iPhone6s-wide) {
+        @rules();
+    }
+}
+
+// iPhone-wide
+.mobile-iPhone-wide(@rules) {
+    @media (max-width: @brk-iPhone-wide) {
+        @rules();
+    }
+}
+
+// iPhone6sPlus-portrait
+.mobile-iPhone6sPlus-portrait(@rules) {
+    @media (max-width: @brk-iPhone6sPlus-portrait) {
+        @rules();
+    }
+}
+
+// iPhone6s-portrait
+.mobile-iPhone6s-portrait(@rules) {
+    @media (max-width: @brk-iPhone6s-portrait) {
+        @rules();
+    }
+}
+
+// extra-narrow
+.mobile-extra-narrow(@rules) {
+    @media (max-width: @brk-extra-narrow) {
+        @rules();
+    }
+}
+
+.screens(@rules-xs, @rules-sm, @rules-md, @rules-lg, @rules-xl, @rules-xxl) {
+    .screen-xs-max(@rules-xs);
+    .screen-sm-min(@rules-sm);
+    .screen-md-min(@rules-md);
+    .screen-lg-min(@rules-lg);
+    .screen-xl-min(@rules-xl);
+    .screen-xxl-min(@rules-xxl);
+}
+
+.screensMax(@rules-xs, @rules-sm, @rules-md, @rules-lg, @rules-xl, @rules-xxl) {
+    .screen-xs-max(@rules-xs);
+    .screen-sm-max(@rules-sm);
+    .screen-md-max(@rules-md);
+    .screen-lg-max(@rules-lg);
+    .screen-xl-max(@rules-xl);
+    .screen-xxl-min(@rules-xxl);
+}
+
+.screensMaxMobile(@rules-eb, @rules-xxl, @rules-xl, @rules-lg, @rules-md, @rules-sm, @rules-xs, @rules-en) {
+    .mobile-wide(@rules-eb);
+    .mobile-narrow(@rules-xxl);
+    .mobile-iPhone6sPlus-wide(@rules-xl);
+    .mobile-iPhone6s-wide(@rules-lg);
+    .mobile-iPhone-wide(@rules-md);
+    .mobile-iPhone6sPlus-portrait(@rules-sm);
+    .mobile-iPhone6s-portrait(@rules-xs);
+    .mobile-extra-narrow(@rules-en);
 }

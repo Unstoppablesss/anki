@@ -11,6 +11,8 @@ src/assets/less/components/css/
 *.code-workspace
 *.codekit3
 dist/themes/selectable/card-01-for-test.html
+row_copies
+min
+external
+dist/themes/selectable/js/min/
 *.codekit3
-*.codekit3
-config.codekit3

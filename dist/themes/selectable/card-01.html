@@ -3,48 +3,17 @@
    - Fields:   ★ Selectable choices:
      - variant-1 | variant-2 | variant-3
    - Card: Selectable
+   - ✔ Key point notes - well done: will be display when the aswer is correct for Back Template only
+   - ✘ Key point notes - bummer: will be display when the aswer is wrong for Back Template only
    - Info: Choose from the offered answers 
    - Key:  ★ Required
            ☆ Optional (recommended)
            ✎ Optional (Notes)
 =============================================== -->
-
-<!-- ==========================================
-MAIN JQUERY
-DELETE THIS MAIN JQERY IN (ANKI 2.1)!
-=============================================== -->
-<script type="text/javascript">
-// PLACE FOR jQuery-v3.2.1-min.js
-</script>
-<!-- ==========================================
-end MAIN JQUERY
-=============================================== -->
-
-<!-- ==========================================
-JQUERY UI 
-Includes: widget.js, widgets/selectable.js, widgets/mouse.js
-=============================================== -->
-<script type="text/javascript">
-  // PLACE FOR jquery-ui-1.12.1-min.js
-</script>
-<!-- ==========================================
-end JQUERY UI
-=============================================== -->
-
-<!-- ==========================================
-JQUERY UI Touch Punch
-=============================================== -->
-<script type="text/javascript">
-  // PLACE FOR jQuery UI Touch Punch 0.2.3.js
-</script>
-<!-- ==========================================
-end JQUERY UI Touch Punch
-=============================================== -->
-
 <div id="front" class="container card-1 pb">
   <h1 class="syntax">
 
-<!-- ==============================================
+    <!-- ==============================================
     change "js" class of gutter for diferent color theme
     "css"
     "devel"
@@ -53,126 +22,128 @@ end JQUERY UI Touch Punch
     "html"
     "wordpress"
 =============================================== -->
-<div id="front" class="container card-1 pb">
-  <h1 class="syntax">
-<div class="gutter js p-">
-    {{^☆ Syntax}}Syntax{{/☆ Syntax}}
-    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
-</div>
-<div class="arrow-main grid-item 1/8">
-    <svg id="more-arrows">
-      <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
-      <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
-      <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
-    </svg>
-</div>
-<div id="selectbox"> 
- {{★ Selectable choices}}
-</div>
+    <div id="front" class="container card-1 pb">
+      <h1 class="syntax">
+        <div class="gutter js p-">
+          {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+        </div>
+        <div class="arrow-main grid-item 1/8">
+          <svg id="more-arrows">
+            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+          </svg>
+        </div>
+        <div id="selectbox">
+          {{★ Selectable choices}}
+        </div>
 
-  </h1>
+      </h1>
 
 
-<p class = "title"> {{★ Title}} </p>  
+      <p class="title"> {{★ Title}} </p>
 
-{{#☆ Sample (code block or image)}}
-<button id="toggle">Show Sample code</button>
-  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div> 
-{{/☆ Sample (code block or image)}}
+      {{#☆ Sample (code block or image)}}
+      <button id="toggle">Show Sample code</button>
+      <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>
+      {{/☆ Sample (code block or image)}}
 
-<span class="ui-icon ui-icon-arrowthick-1-n"> </span>
+      <span class="ui-icon ui-icon-arrowthick-1-n"> </span>
 
-<div class="tag">{{^Tags}}{{Tags}}{{/Tags}}</div>
-<div class = "add-space-for-mobile-base"></div>
+      <div class="tag">{{^Tags}}{{Tags}}{{/Tags}}</div>
+      <div class="add-space-for-mobile-base"></div>
 
-<!-- ==========================================
+      <!-- ==========================================
 FRONT-SELECTABLE JS
 =============================================== -->
-<script type="text/javascript">
+      <script type="text/javascript">
   // PLACE FOR front-selectable.js
-</script>
-<!-- ==========================================
+      </script>
+      <!-- ==========================================
 end FRONT-SELECTABLE JS
 =============================================== -->
 
 
-<!--=================================================
+      <!--=================================================
 =            Buttor toggle hide/show of {{☆ Sample (code block or image)}}            =
 ==================================================-->
 
-<script>
-var title = document.querySelector('.title');
-var toggle = document.getElementById('toggle');
-var sampleCode = document.querySelector('.sample-code');
-var button = document.getElementsByTagName('button')[0];
+      <script>
+        var title = document.querySelector('.title');
+        var toggle = document.getElementById('toggle');
+        var sampleCode = document.querySelector('.sample-code');
+        var button = document.getElementsByTagName('button')[0];
 
-sampleCode.style.display = 'none';
-toggle.addEventListener('click', function() {
-    if (sampleCode.style.display == 'none') {
-        toggle.textContent = 'Hide Sample code';
-        sampleCode.style.display = 'block';
-        button.style.background = '#508abc';
-
-    } else {
-        toggle.textContent = 'Show Sample code';
         sampleCode.style.display = 'none';
-        button.style.background = '#52bab3';
-    }
-});
-</script>
+        toggle.addEventListener('click', function () {
+          if (sampleCode.style.display == 'none') {
+            toggle.textContent = 'Hide Sample code';
+            sampleCode.style.display = 'block';
+            button.style.background = '#508abc';
 
-<!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
+          } else {
+            toggle.textContent = 'Show Sample code';
+            sampleCode.style.display = 'none';
+            button.style.background = '#52bab3';
+          }
+        });
+      </script>
 
-<!-- =====================[Back of card]===================== -->
+      <!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
 
+      <!-- =====================[Back of card]===================== -->
+      <!-- ==========================================
+BACK-SELECTABLE JS
+ * values of variables from the front side Selectable:
+ * 		sequentian, result,
+ * function from the front side Selectable:
+ * 		shuffle()
+ *
+ * ! These variables is available only without "{FrontSide}" tag on the Back template!
+ * ! Don't care about of this message in edit mode (Anki 2.1):
+ * "Invalid HTML on card: ReferenceError: shuffle is not defined"
+ * it happens because the variable "shuffle" defined on the front side of the card. And is only available after displaying the front side.
 
-
-
-<!-- ==========================================
-MAIN JQUERY
-DELETE THIS MAIN JQERY IN (ANKI 2.1)!
-IGNORE: "Invalid HTML on card: ReferenceError: [variable] is not defined"
-in Anki's editor window
+!!!! These rules not been tested on the AnkiDroid !!!!
 =============================================== -->
-<script type="text/javascript">
-// PLACE FOR jQuery-v3.2.1-min.js
-</script>
-<!-- ==========================================
-end MAIN JQUERY
-=============================================== -->
+      <h1 class="syntax">
+        <div class="gutter devel p-">
+          {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+        </div>
+        <div id="selectbox" class="back">
+          {{★ Selectable choices}}
+        </div>
 
-  <h1 class="syntax">
-<div class="gutter devel p-">
-{{^☆ Syntax}}Syntax{{/☆ Syntax}}
-{{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
-</div>
-<div id="selectbox" class="back">   
- {{★ Selectable choices}}
-</div>
+      </h1>
 
- </h1>
+      <div class="right-answers mb"></div>
 
-  <div class="right-answers mb"></div>
+      <div id="select-result" />
 
-<div id="select-result" />   
+      <div id="answer" class="container card-1 pt+">
+        <div class="box-code">{{★ Key point (code block or image)}}</div>
 
-<div id="answer" class="container card-1 pt+">
-  <div class="box-code">{{★ Key point (code block or image)}}</div>
-  <div class="box-notes">{{☆ Key point notes}}</div>
-  <div class="footer mt pb tl wrapper">
-    {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
-  </div>
-</div>
+        <div class="box-notes" style="text-align: left">
+          <div id="true">{{#✔ Key point notes - well done}}
+            <font color="#2fab49">Well done! </font>{{✔ Key point notes - well done}}{{/✔ Key point notes - well done}}</div>
+          <div id="false">{{#✘ Key point notes - bummer}}
+            <font color="#d80014">Bummer!&nbsp;</font>{{✘ Key point notes - bummer}}{{/✘ Key point notes - bummer}}</div>
+        </div>
 
-<div class="tag">{{#Tags}}{{Tags}}{{/Tags}}</div>
-<div class = "add-space-for-mobile-base"></div>
+        <div class="footer mt pb tl wrapper">
+          {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
+        </div>
+      </div>
 
-<!-- ==========================================
+      <div class="tag">{{#Tags}}{{Tags}}{{/Tags}}</div>
+      <div class="add-space-for-mobile-base"></div>
+
+      <!-- ==========================================
 BACK-SELECTABLE JS
 =============================================== -->
-<script type="text/javascript">
+      <script type="text/javascript">
   // PLACE FOR back-selectable.js
-</script>
-<!-- ==========================================
+      </script>
+      <!-- ==========================================
 end BACK-SELECTABLE JS
 =============================================== -->

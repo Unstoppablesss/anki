@@ -7,45 +7,70 @@
 // #2aa198 = green;
 // #c4277f = purple;
 // #de9b26 = yellow;
-
 @theme-dark-background: #384047;
 @theme-highlight-text: #c8ced1;
-
-@theme-dark-base:      #2aa198;
-@theme-dark-color:      #ffffff;
-@theme-dark-sign:      #6c71c4;
-@theme-dark-op:        #5FA7CD; // Blue
-@theme-dark-int:       #EF5C54; // Purple
-@theme-dark-str:       #b58900; // Yellow
+@theme-dark-base: #ffffff;
+// @theme-dark-base:      #2aa198;
+@theme-dark-color: #ffffff;
+@theme-dark-sign: #6c71c4;
+@theme-dark-op: #5FA7CD; // Blue
+@theme-dark-int: #EF5C54; // Purple
+@theme-dark-str: #b58900; // Yellow
 // @theme-dark-str:       #DFD7A9; // Yellow
-@theme-dark-key:       #5FA7CD; // Blue
-@keyword-control:     #5fcf80;
-@theme-dark-var:       #2aa198; // Green flat
-@theme-dark-other:     #2aa198; // 
-@theme-dark-gray:     #839496; // gray
-@theme-css-parametr:   #de9b26; // yellow flat
-@theme-css-colorName:  #c4277f; // purple flat
+@theme-dark-key: #5FA7CD; // Blue
+@keyword-control: #5fcf80;
+@theme-dark-var: #2aa198; // Green flat
+@theme-dark-other: #2aa198; // 
+@theme-dark-gray: #839496; // gray
+@theme-css-parametr: #de9b26; // yellow flat
+@theme-css-colorName: #c4277f; // purple flat
 //@theme-dark-var:       #2aa198; // Green
-@theme-dark-comment:      #777; // Grey
-@theme-dark-lowlight:  #ec7b20; // Orange (Wildcard color)
+@theme-dark-comment: #777; // Grey
+@theme-dark-lowlight: #ec7b20; // Orange (Wildcard color)
 @theme-dark-highlight: #ec7b20; // Orange (Wildcard color)
-
 pre,
 pre code,
 pre .hljs {
-  margin-bottom: 0;
-  text-align: left;
-  color: @theme-dark-base;
-  background: @theme-dark-background;
-  opacity: .99;
+    margin-bottom: 0;
+    text-align: left;
+    color: @theme-dark-base;
+    background: @theme-dark-background;
+    opacity: .99;
 }
 
-pre code b, pre code strong { color: @theme-dark-op;  }
-pre code i, pre code em     { color: @theme-dark-int; }
-pre code s, pre code u      { color: @theme-dark-str; }
-pre code span, pre code sup { color: @theme-dark-key; }
-pre code var, pre code sub  { color: @theme-dark-var; }
-pre code small              { color: @theme-dark-comment; }
+pre code b,
+pre code strong {
+    color: @theme-dark-op;
+}
 
-pre code q                  { color: @theme-dark-lowlight;  }
-pre code mark               { color: @theme-dark-highlight; }
+pre code i,
+pre code em {
+    color: @theme-dark-int;
+}
+
+pre code s,
+pre code u {
+    color: @theme-dark-str;
+}
+
+pre code span,
+pre code sup {
+    color: @theme-dark-key;
+}
+
+pre code var,
+pre code sub {
+    color: @theme-dark-var;
+}
+
+pre code small {
+    color: @theme-dark-comment;
+}
+
+pre code q {
+    color: @theme-dark-lowlight;
+}
+
+pre code mark {
+    color: @theme-dark-highlight;
+}
