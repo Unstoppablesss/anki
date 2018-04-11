@@ -135,7 +135,6 @@ if (!ok) {
 				for (var cor = 0; cor < correct.length; cor++) {
 					if (i === correct[cor]) {
 						abcGutter[i].classList.add('active-right')
-
 					}
 				}
 			}

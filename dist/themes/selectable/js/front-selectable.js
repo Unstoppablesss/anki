@@ -76,7 +76,7 @@ divide(examples)
 var result = []
 var arrayNum
 var myListArray = document.querySelectorAll('#selectable>li')
-document.querySelectorAll('#selectable')[0].onclick = function(e) {
+document.querySelectorAll('#selectable')[0].onclick = function (e) {
 	// e.preventDefault();
 	// console.log(e.target);
 

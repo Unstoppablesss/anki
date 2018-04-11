@@ -1,595 +1,573 @@
-
-
-	#feedback { 
-		font-size: 1em; 
+#feedback {
+    font-size: 1em;
 }
-	#selectbox {
-		display: block;
-		// display: inline-block;
-		width: 100%;
-		overflow: auto;
-			.screensMaxMobile(
-		{
-// wide
-	},
-		{
-		width: 96%;
-		margin: 0 auto;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{
+
+#selectbox {
+    display: block; // display: inline-block;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: auto;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        width: 96%;
+        margin: 0 auto;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
 }
-	);
-	}
 
 #selectbox.back {
-		display: inline-block;
-		border-collapse: separate;
-		border-spacing: 2px;
-		box-shadow: 0 0 1em lighten(#2bb427, 40%);
-		margin: 10px auto;
-		// padding: 2px;
-		cursor: pointer;
-		transition: .15s;
-		&.active-selectbox{
-				box-shadow: 0 0 1em lighten(#d52834, 40%);
-		}
-			 .screensMaxMobile(
-			 {
-		// wide
-		 },
-			 {
-		// narrow
-		width: 96%;
-		margin: 10px;
-		 },
-			 {
-		// iPhone6sPlus-wide
-		 },
-			 {
-		// iPhone6s-wide
-		 }, 
-			 {
-			 // iPhone-wide
-		 },
-			 {
-			 // iPhone6sPlus-portrait
-		 },
-			 {
-			 // iPhone6s-portrait
-			 width: 95%;
-		 },
-			 {
-			 // extra-narrow
-			width: 93%;
-		 }
-		 );
-
+    display: inline-block;
+    border-collapse: separate;
+    border-spacing: 2px;
+    box-shadow: 0 0 1em lighten(#2bb427, 40%);
+    margin: 10px auto; // padding: 2px;
+    cursor: pointer;
+    transition: .15s;
+    &.active-selectbox {
+        box-shadow: 0 0 1em lighten(#d52834, 40%);
+    }
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        width: 96%;
+        margin: 10px;
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+    }
+    , {
+        // iPhone6sPlus-portrait
+    }
+    , {
+        // iPhone6s-portrait
+        width: 95%;
+    }
+    , {
+        // extra-narrow
+        width: 93%;
+    }
+    );
 }
 
-	#selectable { 
-		display: block;
-		overflow: auto;
-		box-sizing: border-box;
-		color: rgb(87, 99, 102);
-		text-decoration: none solid rgb(87, 99, 102);
-		column-rule-color: rgb(87, 99, 102);
-		perspective-origin: 165px 160px;
-		transform-origin: 165px 160px;
-		caret-color: rgb(87, 99, 102);
-		border: 0px none rgb(87, 99, 102);
-			/* style | variant | weight | stretch | size/line-height | family */
-		// font: normal normal normal normal 14px / 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 1em; //14px
-		line-height: 1.8; //24px
-		list-style: none outside none;
-		margin: 0px;
-		outline: rgb(87, 99, 102) none 0px;
-		padding: 0px;
-		width: 99.99%;
-	 // .screensMaxMobile(
-	 //       {
-	 //    // wide
-	 //     },
-	 //       {
-	 //    // narrow
-	 //    font-size: 18;
-	 //     },
-	 //       {
-	 //    // iPhone6sPlus-wide
-	 //     },
-	 //       {
-	 //    // iPhone6s-wide
-	 //     }, 
-	 //       {
-	 //       // iPhone-wide
-	 //     },
-	 //       {
-	 //       // iPhone6sPlus-portrait
-	 //       font-size: 16;
-	 //     },
-	 //       {
-	 //       // iPhone6s-portrait
-	 //       font-size: 14;
-	 //     },
-	 //       {
-	 //       // extra-narrow
-	 //     }
-	 //   );
+#selectable {
+    display: block;
+    overflow: auto;
+    box-sizing: border-box;
+    color: rgb(87, 99, 102);
+    text-decoration: none solid rgb(87, 99, 102);
+    column-rule-color: rgb(87, 99, 102);
+    perspective-origin: 165px 160px;
+    transform-origin: 165px 160px;
+    caret-color: rgb(87, 99, 102);
+    border: 0px none rgb(87, 99, 102);
+    /* style | variant | weight | stretch | size/line-height | family */
+    // font: normal normal normal normal 14px / 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em; //14px
+    line-height: 1.8; //24px
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(87, 99, 102) none 0px;
+    padding: 0px;
+    width: 99.99%; // .screensMaxMobile(
+    //       {
+    //    // wide
+    //     },
+    //       {
+    //    // narrow
+    //    font-size: 18;
+    //     },
+    //       {
+    //    // iPhone6sPlus-wide
+    //     },
+    //       {
+    //    // iPhone6s-wide
+    //     }, 
+    //       {
+    //       // iPhone-wide
+    //     },
+    //       {
+    //       // iPhone6sPlus-portrait
+    //       font-size: 16;
+    //     },
+    //       {
+    //       // iPhone6s-portrait
+    //       font-size: 14;
+    //     },
+    //       {
+    //       // extra-narrow
+    //     }
+    //   );
 }
+
 #selectable li {
-		background-color: #F1F2F2; 
-		text-decoration: none solid rgb(87, 99, 102);
-		column-rule-color: rgb(87, 99, 102);
-		perspective-origin: 165px 40px;
-		transform-origin: 165px 40px;
-		caret-color: rgb(87, 99, 102);
-		border-top: 0px none rgb(63, 138, 191);
-		border-right: 0px none rgb(63, 138, 191);
-		border-bottom: 1px solid #E2E4E5;
-		border-left: 0px none rgb(63, 138, 191);
-		cursor: pointer;
-		// list-style: none outside none;
-		list-style-type: none;
-		outline: rgb(87, 99, 102) none 0px;
-		margin: 0; 
-		padding: 1em .2em 1em 1em; 
-		// font-size: .9em; 
-		font-weight: 100;
-		text-align: left;
-		height: auto; 
-		z-index: 100;
-		transition: background-color .3s;
-			.screensMaxMobile(
-		{
-	// wide
-	},
-		{
-	// narrow
-		padding: 1em .2em 1em .5em;
-		font-weight: 200;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{}
-	);
-		&.active-selecting {
-			background: #fff;
-			border-color: #d4d9dd;
-			box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset;
-			.screensMaxMobile(
-							 {
-						// wide
-						 },
-							 {
-						// narrow
-						 },
-							 {
-						// iPhone6sPlus-wide
-						 },
-							 {
-						// iPhone6s-wide
-						 }, 
-							 {
-							 // iPhone-wide
-						 },
-							 {
-							 // iPhone6sPlus-portrait
-							 background: #F39814;
-							 color: white !important;
-						 },
-							 {
-							 // iPhone6s-portrait
-						 },
-							 {
-							 // extra-narrow
-						 }
-					 );
-		}
-		&.active-selecting > .div-content,
-		&.active-wrong > .div-content,
-		&.active-right > .div-content {
-			.screensMaxMobile(
-							 {
-						// wide
-						 },
-							 {
-						// narrow
-						 },
-							 {
-						// iPhone6sPlus-wide
-						 },
-							 {
-						// iPhone6s-wide
-						 }, 
-							 {
-							 // iPhone-wide
-						 },
-							 {
-							 // iPhone6sPlus-portrait
-							 color: white;
-						 },
-							 {
-							 // iPhone6s-portrait
-						 },
-							 {
-							 // extra-narrow
-						 }
-					 );
-		}
+    background-color: #F1F2F2;
+    text-decoration: none solid rgb(87, 99, 102);
+    column-rule-color: rgb(87, 99, 102);
+    perspective-origin: 165px 40px;
+    transform-origin: 165px 40px;
+    caret-color: rgb(87, 99, 102);
+    border-top: 0px none rgb(63, 138, 191);
+    border-right: 0px none rgb(63, 138, 191);
+    border-bottom: 1px solid #E2E4E5;
+    border-left: 0px none rgb(63, 138, 191);
+    cursor: pointer; // list-style: none outside none;
+    list-style-type: none;
+    outline: rgb(87, 99, 102) none 0px;
+    margin: 0;
+    padding: 1em .2em 1em 1em; // font-size: .9em; 
+    font-weight: 100;
+    text-align: left;
+    height: auto;
+    z-index: 100;
+    transition: background-color .3s;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        padding: 1em .2em 1em .5em;
+        font-weight: 200;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
+    &.active-selecting {
+        background: #fff;
+        border-color: #d4d9dd;
+        box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset;
+        .screensMaxMobile( {
+            // wide
+        }
+        , {
+            // narrow
+        }
+        , {
+            // iPhone6sPlus-wide
+        }
+        , {
+            // iPhone6s-wide
+        }
+        , {
+            // iPhone-wide
+        }
+        , {
+            // iPhone6sPlus-portrait
+            background: #F39814;
+            color: white !important;
+        }
+        , {
+            // iPhone6s-portrait
+        }
+        , {
+            // extra-narrow
+        }
+        );
+    }
+    &.active-selecting>.div-content,
+    &.active-wrong>.div-content,
+    &.active-right>.div-content {
+        .screensMaxMobile( {
+            // wide
+        }
+        , {
+            // narrow
+        }
+        , {
+            // iPhone6sPlus-wide
+        }
+        , {
+            // iPhone6s-wide
+        }
+        , {
+            // iPhone-wide
+        }
+        , {
+            // iPhone6sPlus-portrait
+            color: white;
+        }
+        , {
+            // iPhone6s-portrait
+        }
+        , {
+            // extra-narrow
+        }
+        );
+    }
 }
 
-#selectable li.active-wrong > strong.abc {
-	color: #d52834;
-	border-color: #d52834;
-}
-#selectable li.active-right > strong.abc {
-	color: #2bb427;
-	border-color: #2bb427;
+#selectable li.active-wrong>strong.abc {
+    color: #d52834;
+    border-color: #d52834;
 }
 
-#selectable li.active-wrong{
-	.screensMaxMobile(
-				 {
-			// wide
-			 },
-				 {
-			// narrow
-			 },
-				 {
-			// iPhone6sPlus-wide
-			 },
-				 {
-			// iPhone6s-wide
-			 }, 
-				 {
-				 // iPhone-wide
-			 },
-				 {
-				 // iPhone6sPlus-portrait
-				 color: white;
-				 background-color: #d52834;
-			 },
-				 {
-				 // iPhone6s-portrait
-			 },
-				 {
-				 // extra-narrow
-			 }
-		 );
+#selectable li.active-right>strong.abc {
+    color: #2bb427;
+    border-color: #2bb427;
 }
-#selectable li.active-right{
-	.screensMaxMobile(
-				 {
-			// wide
-			 },
-				 {
-			// narrow
-			 },
-				 {
-			// iPhone6sPlus-wide
-			 },
-				 {
-			// iPhone6s-wide
-			 }, 
-				 {
-				 // iPhone-wide
-			 },
-				 {
-				 // iPhone6sPlus-portrait
-				 color: white;
-				 background-color: #2bb427;
-			 },
-				 {
-				 // iPhone6s-portrait
-			 },
-				 {
-				 // extra-narrow
-			 }
-		 );
+
+#selectable li.active-wrong {
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+    }
+    , {
+        // iPhone6sPlus-portrait
+        color: white;
+        background-color: #d52834;
+    }
+    , {
+        // iPhone6s-portrait
+    }
+    , {
+        // extra-narrow
+    }
+    );
+}
+
+#selectable li.active-right {
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+    }
+    , {
+        // iPhone6sPlus-portrait
+        color: white;
+        background-color: #2bb427;
+    }
+    , {
+        // iPhone6s-portrait
+    }
+    , {
+        // extra-narrow
+    }
+    );
 }
 
 .ui-selectable {
-	-ms-touch-action: none;
-	touch-action: none;
+    -ms-touch-action: none;
+    touch-action: none;
 }
+
 .ui-selectable-helper {
-	position: absolute;
-	z-index: 100;
-	border: 1px dotted black;
+    position: absolute;
+    z-index: 100;
+    border: 1px dotted black;
 }
 
 .abc {
-	box-sizing: border-box;
-	color: rgb(123, 139, 142);
-	// cursor: pointer;
-	padding: .5em;
-	left: 0;
-	text-align: center;
-	text-decoration: none solid rgb(123, 139, 142);
-	width: auto;
-	column-rule-color: rgb(123, 139, 142);
-	perspective-origin: 20px 20px;
-	transform-origin: 20px 20px;
-	caret-color: rgb(123, 139, 142);
-	border: 2px solid #E2E4E5;
-	border-radius: 5px 5px 5px 5px;
-	/* style | variant | weight | stretch | size/line-height | family */
-	// font: normal normal 500 normal 23px / 36px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2rem; //14px
-	line-height: 1.5rem; //24px
-	list-style: none outside none;
-	outline: rgb(123, 139, 142) none 0px;
-	transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
-
-	.screensMaxMobile(
-				 {
-			// wide
-			 },
-				 {
-			// narrow
-			font-size: 1.1em;
-			font-weight: 300;
-			padding: .3em;
-			 },
-				 {
-			// iPhone6sPlus-wide
-			 },
-				 {
-			// iPhone6s-wide
-			 }, 
-				 {
-				 // iPhone-wide
-			 },
-				 {
-				 // iPhone6sPlus-portrait
-				 display: none;
-			 },
-				 {
-				 // iPhone6s-portrait
-			 },
-				 {
-				 // extra-narrow
-			 }
-		 );
-
-	&.active-abc {
-		color: #F39814;
-		border-color: #F39814;
-		.screensMaxMobile(
-				 {
-			// wide
-			 },
-				 {
-			// narrow
-			 },
-				 {
-			// iPhone6sPlus-wide
-			 },
-				 {
-			// iPhone6s-wide
-			 }, 
-				 {
-				 // iPhone-wide
-			 },
-				 {
-				 // iPhone6sPlus-portrait
-			 },
-				 {
-				 // iPhone6s-portrait
-			 },
-				 {
-				 // extra-narrow
-			 }
-		 );
-	}
-	.mac #selectable li:hover &.active-abc {
-		color: #F39814;
-		border-color: #F39814;
-	}
-	&.active-right {
-		color: #2bb427;
-		border-color: #2bb427;
-	}
-	&.active-wrong {
-		color: #d52834;
-		border-color: #d52834;
-	}
+    box-sizing: border-box;
+    color: rgb(123, 139, 142); // cursor: pointer;
+    padding: .5em;
+    left: 0;
+    text-align: center;
+    text-decoration: none solid rgb(123, 139, 142);
+    width: auto;
+    column-rule-color: rgb(123, 139, 142);
+    perspective-origin: 20px 20px;
+    transform-origin: 20px 20px;
+    caret-color: rgb(123, 139, 142);
+    border: 2px solid #E2E4E5;
+    border-radius: 5px 5px 5px 5px;
+    /* style | variant | weight | stretch | size/line-height | family */
+    // font: normal normal 500 normal 23px / 36px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem; //14px
+    line-height: 1.5rem; //24px
+    list-style: none outside none;
+    outline: rgb(123, 139, 142) none 0px;
+    transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        font-size: 1.1em;
+        font-weight: 300;
+        padding: .3em;
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+    }
+    , {
+        // iPhone6sPlus-portrait
+        display: none;
+    }
+    , {
+        // iPhone6s-portrait
+    }
+    , {
+        // extra-narrow
+    }
+    );
+    &.active-abc {
+        color: #F39814;
+        border-color: #F39814;
+        .screensMaxMobile( {
+            // wide
+        }
+        , {
+            // narrow
+        }
+        , {
+            // iPhone6sPlus-wide
+        }
+        , {
+            // iPhone6s-wide
+        }
+        , {
+            // iPhone-wide
+        }
+        , {
+            // iPhone6sPlus-portrait
+        }
+        , {
+            // iPhone6s-portrait
+        }
+        , {
+            // extra-narrow
+        }
+        );
+    }
+    .mac #selectable li:hover &.active-abc {
+        color: #F39814;
+        border-color: #F39814;
+    }
+    &.active-right {
+        color: #2bb427;
+        border-color: #2bb427;
+    }
+    &.active-wrong {
+        color: #d52834;
+        border-color: #d52834;
+    }
 }
-.mac .selectable-front li:hover .abc{
-	border-color: #4e5a64;
-	color: #4e5a64;
+
+.mac .selectable-front li:hover .abc {
+    border-color: #4e5a64;
+    color: #4e5a64;
 }
 
 .div-content {
-	display: inline-block;
-	box-sizing: border-box;
-	padding-left: 10px;
-	width: 85%;
-	color: rgb(87, 99, 102);
-	cursor: pointer;
-	text-align: left;
-	text-decoration: none solid rgb(87, 99, 102);
-	vertical-align: middle;
-	column-rule-color: rgb(87, 99, 102);
-	perspective-origin: 115px 24.5px;
-	transform-origin: 115px 24.5px;
-	caret-color: rgb(87, 99, 102);
-	border: 0px none rgb(87, 99, 102);
-	// font: normal normal normal normal 16px / 20.8px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	list-style: none outside none;
-	outline: rgb(87, 99, 102) none 0px;
-		.screensMaxMobile(
-				 {
-			font-size: .9em; //14px
-			line-height: 1.3em;
-			 },
-				 {
-			// narrow
-			 },
-				 {
-			// iPhone6sPlus-wide
-			 },
-				 {
-			// iPhone6s-wide
-			 }, 
-				 {
-				 // iPhone-wide
-			 },
-				 {
-				 // iPhone6sPlus-portrait
-				 padding-left: 3px;
-			 },
-				 {
-				 // iPhone6s-portrait
-			 },
-				 {
-				 // extra-narrow
-			 }
-		 );
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 85%;
+    color: rgb(87, 99, 102);
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none solid rgb(87, 99, 102);
+    vertical-align: middle;
+    column-rule-color: rgb(87, 99, 102);
+    perspective-origin: 115px 24.5px;
+    transform-origin: 115px 24.5px;
+    caret-color: rgb(87, 99, 102);
+    border: 0px none rgb(87, 99, 102); // font: normal normal normal normal 16px / 20.8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none outside none;
+    outline: rgb(87, 99, 102) none 0px;
+    .screensMaxMobile( {
+        font-size: .9em; //14px
+        line-height: 1.3em;
+    }
+    , {
+        // narrow
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+    }
+    , {
+        // iPhone6sPlus-portrait
+        padding-left: 3px;
+    }
+    , {
+        // iPhone6s-portrait
+    }
+    , {
+        // extra-narrow
+    }
+    );
 }
 
-#selectable > li > i,
-#selectable > li > div > i,
-#selectable > li > p > i,
-#selectable > li > div > div > i, 
-#selectable > li > div > p > i, 
-#selectable > li > div > div > div > i, 
-#selectable > li > div > div > p > i, 
-#selectable > li > div > div > pre > i {
-	font-style: normal;
-	z-index: 0;
+#selectable>li>i,
+#selectable>li>div>i,
+#selectable>li>p>i,
+#selectable>li>div>div>i,
+#selectable>li>div>p>i,
+#selectable>li>div>div>div>i,
+#selectable>li>div>div>p>i,
+#selectable>li>div>div>pre>i {
+    font-style: normal;
+    z-index: 0;
 }
 
-
-.ui-selectable-helper{display:none;}
-
-
-
+.ui-selectable-helper {
+    display: none;
+}
 
 .arrow-main {
-	display: none;
-	right: 15px;
-float: right;
-	color: black;
-
-			.screensMaxMobile(
-		{
-// wide
-	},
-		{
-// narrow
-		display: block;
-	},
-		{},
-		{}, 
-		{},
-		{},
-		{},
-		{
+    display: none;
+    right: 15px;
+    float: right;
+    color: black;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+        display: block;
+    }
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    , {}
+    );
 }
-	);
-}
-
 
 /* Arrow & Hover Animation */
 
 #more-arrows {
--webkit-transform: scale(0.8);
-transform: scale(0.7);
-width: 80px;
-height: 70px;
-top: 3%;
-right: 35px;
-position: relative;
-
-	 .screensMaxMobile(
-	 {
-// wide
- },
-	 {
-// narrow
- },
-	 {
-// iPhone6sPlus-wide
- },
-	 {
-// iPhone6s-wide
- }, 
-	 {
-	 // iPhone-wide
-	transform: scale(1);
-	width: 80px;
-	height: 70px;
-	top: 3%;
-	right: 20px;
-	position: relative;
- },
-	 {
-	 // iPhone6sPlus-portrait
- },
-	 {
-	 // iPhone6s-portrait
-		transform: scale(0.6);
-		width: 80px;
-		height: 70px;
-		top: 3%;
-		right: 30px;
-		position: relative;
- },
-	 {
-	 // extra-narrow
-	transform: scale(0.5);
-	width: 80px;
-	height: 70px;
-	top: 3%;
-	right: 35px;
-	position: relative;
- }
- );
+    -webkit-transform: scale(0.8);
+    transform: scale(0.7);
+    width: 80px;
+    height: 70px;
+    top: 3%;
+    right: 35px;
+    position: relative;
+    .screensMaxMobile( {
+        // wide
+    }
+    , {
+        // narrow
+    }
+    , {
+        // iPhone6sPlus-wide
+    }
+    , {
+        // iPhone6s-wide
+    }
+    , {
+        // iPhone-wide
+        transform: scale(1);
+        width: 80px;
+        height: 70px;
+        top: 3%;
+        right: 20px;
+        position: relative;
+    }
+    , {
+        // iPhone6sPlus-portrait
+    }
+    , {
+        // iPhone6s-portrait
+        transform: scale(0.6);
+        width: 80px;
+        height: 70px;
+        top: 3%;
+        right: 30px;
+        position: relative;
+    }
+    , {
+        // extra-narrow
+        transform: scale(0.5);
+        width: 80px;
+        height: 70px;
+        top: 3%;
+        right: 35px;
+        position: relative;
+    }
+    );
 }
 
-
-.arrow-main:focus polygon, #more-arrows:focus polygon {
-	fill: #FFF;
-	-webkit-transition: all .2s ease-out;
-	transition: all .2s ease-out;
+.arrow-main:focus polygon,
+#more-arrows:focus polygon {
+    fill: #FFF;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
-
-.arrow-main:focus polygon.arrow-bottom, #more-arrows:focus polygon.arrow-bottom {
-	-webkit-transform: translateY(-18px);
-					transform: translateY(-18px);
+.arrow-main:focus polygon.arrow-bottom,
+#more-arrows:focus polygon.arrow-bottom {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
 }
-.arrow-main:focus polygon.arrow-top, #more-arrows:focus polygon.arrow-top {
-	-webkit-transform: translateY(18px);
-					transform: translateY(18px);
+
+.arrow-main:focus polygon.arrow-top,
+#more-arrows:focus polygon.arrow-top {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
 }
 
 polygon {
-	fill: #FFF;
-	-webkit-transition: all .2s ease-out;
-	transition: all .2s ease-out;
+    fill: #FFF;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
+
 polygon.arrow-middle {
-	opacity: 0.75;
+    opacity: 0.75;
 }
 
 polygon.arrow-top {
-	opacity: 0.5;
+    opacity: 0.5;
 }
-
-
 
 /* Component containers
 ----------------------------------*/
+
 // .ui-widget {
 // 	font-family: Arial,Helvetica,sans-serif;
 // 	font-size: 1em;
@@ -608,8 +586,8 @@ polygon.arrow-top {
 // 	// border: 2px solid #c5c5c5;
 // }
 // .ui-widget-content {
-	// border: 1px solid #dddddd;
-	// color: #333333;
+// border: 1px solid #dddddd;
+// color: #333333;
 // }
 // .ui-widget-content a {
 // 	// color: #333333;
@@ -623,14 +601,13 @@ polygon.arrow-top {
 // .ui-widget-header a {
 // 	color: #333333;
 // }
-
 /* Interaction states
 ----------------------------------*/
+
 // .ui-state-default,
 // .ui-widget-content .ui-state-default,
 // .ui-widget-header .ui-state-default,
 // .ui-button,
-
 // /* We use html here because we need a greater specificity to make sure disabled
 // works properly when clicked or hovered */
 // html .ui-button.ui-state-disabled:hover,
@@ -676,7 +653,6 @@ polygon.arrow-top {
 // 	color: #2b2b2b;
 // 	text-decoration: none;
 // }
-
 // .ui-visual-focus {
 // 	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
 // }
@@ -702,7 +678,6 @@ polygon.arrow-top {
 // 	color: #ffffff;
 // 	text-decoration: none;
 // }
-
 // /* Interaction Cues
 // ----------------------------------*/
 // .ui-state-highlight,
@@ -760,10 +735,8 @@ polygon.arrow-top {
 // .ui-state-disabled .ui-icon {
 // 	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
 // }
-
 // /* Icons
 // ----------------------------------*/
-
 // /* states and images */
 // .ui-icon {
 // 	width: 16px;
@@ -798,7 +771,6 @@ polygon.arrow-top {
 // .ui-button .ui-icon {
 // 	background-image: url("images/ui-icons_777777_256x240.png");
 // }
-
 // /* positioning */
 // .ui-icon-blank { background-position: 16px 16px; }
 // .ui-icon-caret-1-n { background-position: 0 0; }
@@ -976,11 +948,8 @@ polygon.arrow-top {
 // .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
 // .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 // .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
-
-
 // /* Misc visuals
 // ----------------------------------*/
-
 // /* Corner radius */
 // .ui-corner-all,
 // .ui-corner-top,
@@ -1006,7 +975,6 @@ polygon.arrow-top {
 // .ui-corner-br {
 // 	border-bottom-right-radius: 3px;
 // }
-
 // /* Overlays */
 // .ui-widget-overlay {
 // 	background: #aaaaaa;
