@@ -45,6 +45,7 @@ function divide(target) {
 	target.innerHTML = target.innerHTML.replace(/(>\|&nbsp;)/g, '> | ')
 	target.innerHTML = target.innerHTML.replace(/(>\|\s)/g, '> | ')
 	target.innerHTML = target.innerHTML.replace(/(>&nbsp;\|\s)/g, '> | ')
+	target.innerHTML = target.innerHTML.replace(/(\|&nbsp;<)/g, '| <')
 	target.innerHTML = target.innerHTML.replace(/(\s*\s\|\s\s*)/g, '</div> | ')
 	target.innerHTML = target.innerHTML.replace(
 		/\s*<\/div>\|\/<\/div>s*/g,
@@ -58,8 +59,7 @@ function divide(target) {
 	var list = ''
 	list = list + '<ul id="selectable" class="selectable-front">'
 	for (var i = 0; i < boxes.length; i++) {
-		list =
-			list +
+		list +=
 			'<li class="ui-widget-content"><strong class="abc">' +
 			alphabet[i].toUpperCase() +
 			'</strong><div class="div-content">' +

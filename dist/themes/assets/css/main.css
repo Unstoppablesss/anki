@@ -12007,15 +12007,6 @@ div#answer {
     padding: 0;
   }
 }
-#answer ul,
-#answer ol {
-  text-align: left;
-}
-#answer ul li,
-#answer ol li {
-  /*px*/ padding-bottom: 8px;
-  /*rem*/ padding-bottom: 0.5rem;
-}
 .box-notes {
   width: 85%;
   max-width: 1440px;
@@ -12760,10 +12751,6 @@ polygon.arrow-middle {
 polygon.arrow-top {
   opacity: 0.5;
 }
-/* Component containers
-----------------------------------*/
-/* Interaction states
-----------------------------------*/
 code {
   white-space: pre;
   white-space: pre-wrap;
