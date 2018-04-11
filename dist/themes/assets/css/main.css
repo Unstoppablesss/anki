@@ -12651,6 +12651,7 @@ samp {
 #selectable > li > div > p > i,
 #selectable > li > div > div > div > i,
 #selectable > li > div > div > p > i,
+#selectable > li > div > div > pre > span > i,
 #selectable > li > div > div > pre > i {
   font-style: normal;
   z-index: 0;
