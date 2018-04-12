@@ -12071,24 +12071,12 @@ div#answer {
   white-space: nowrap;
   overflow-y: auto;
 }
-@media (max-width: 767px) {
-  .table_answer {
-    width: 80%;
-  }
+@media (max-width: 1025px) {
 }
-@media (max-width: 767px) {
-  .table_answer {
-    width: 80%;
-  }
-}
-@media (max-width: 1379px) {
+@media (max-width: 769px) {
   .table_answer {
     width: 100%;
-  }
-}
-@media (max-width: 1379px) {
-  .table_answer {
-    width: 100%;
+    padding: 0;
   }
 }
 .td_back {

@@ -16,10 +16,6 @@
 
    - {{c2:://::What is the floor symbol?}}
 =============================================== -->
-
-<div id="front" class="container card-1 pb">
-    <h1 class="syntax">
-
 <!-- ==============================================
     change "js" class of .gutter and <hr> for diferent color theme
     "css"
@@ -29,28 +25,31 @@
     "html"
     "wordpress"
 =============================================== -->
-<div class="gutter js p">
-    {{^☆ Syntax}}Syntax{{/☆ Syntax}}
-    {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}<br>
-</div>
- {{#☆ Syntax (inline code)}}
-<code class="tl">{{☆ Syntax (inline code)}}</code><hr class="gutter js">
-    {{/☆ Syntax (inline code)}}
-  </h1>
-    <div class="sample-code mb">
-        {{cloze:★ Syntax (code block {cloze})}}
-    </div>
-    {{type:cloze:★ Syntax (code block {cloze})}}
-    <p class="title">{{★ Title}}</p>
+<div id="front" class="container card-1 pb">
+	<h1 class="syntax">
+		<div class="gutter devel p">
+			{{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+		</div>
+		{{#☆ Syntax (inline code)}}
+		<code class="tl">{{☆ Syntax (inline code)}}</code>
+		<hr class="gutter devel"> {{/☆ Syntax (inline code)}}
+	</h1>
+	<div class="sample-code mb">
+		{{cloze:★ Syntax (code block {cloze})}}
+	</div>
+	{{type:cloze:★ Syntax (code block {cloze})}}
+	<p class="title">{{★ Title}}</p>
 </div>
 {{#HINT}}
 <button id="toggle">Show Sample code</button>
-<div id="hintField">
-    {{HINT}}
+<div id="hintField" class="box-notes">
+	{{HINT}}
 </div>
 {{/HINT}}
+<div class="mt+">
+	{{#Tags}}{{Tags}}{{/Tags}}
+</div>
 <div class="add-space-for-mobile-cloze"></div>
-{{^Tags}}{{Tags}}{{/Tags}}
 
 <!-- ==========================================
 TYPINGS FIELD FEATURE
@@ -65,24 +64,24 @@ end TYPINGS FIELD FEATURE
 =            Buttor toggle hide/show of {{hint}}            =
 ==================================================-->
 <script>
-var title = document.querySelector('.title');
-var toggle = document.getElementById('toggle');
-var sampleCode = document.querySelector('#hintField');
-var button = document.getElementsByTagName('button')[0];
+	var title = document.querySelector('.title');
+	var toggle = document.getElementById('toggle');
+	var sampleCode = document.querySelector('#hintField');
+	var button = document.getElementsByTagName('button')[0];
 
-sampleCode.style.display = 'none';
-toggle.addEventListener('click', function() {
-    if (sampleCode.style.display == 'none') {
-        toggle.textContent = 'Hide Sample code';
-        sampleCode.style.display = 'block';
-        button.style.background = '#508abc';
+	sampleCode.style.display = 'none';
+	toggle.addEventListener('click', function () {
+		if (sampleCode.style.display == 'none') {
+			toggle.textContent = 'Hide Sample code';
+			sampleCode.style.display = 'block';
+			button.style.background = '#508abc';
 
-    } else {
-        toggle.textContent = 'Show Sample code';
-        sampleCode.style.display = 'none';
-        button.style.background = '#52bab3';
-    }
-});
+		} else {
+			toggle.textContent = 'Show Sample code';
+			sampleCode.style.display = 'none';
+			button.style.background = '#52bab3';
+		}
+	});
 </script>
 <!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
 
@@ -90,39 +89,38 @@ toggle.addEventListener('click', function() {
 
 
 <!-- ===================[back of card]======================= -->
-<div id="answer" class="container card-1 pt">
-  <h1 class="syntax">
-    <div class="gutter js p">
-      {{^☆ Syntax}}Syntax{{/☆ Syntax}}
-      {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
-    </div>
-      {{#☆ Syntax (inline code)}}
-    <code class="tl">{{☆ Syntax (inline code)}}</code>
-
 <!-- ==============================================
-    change "js" class of gutter for diferent color theme
-    "css"
-    "devel"
-    "typograph"
-    "py" 
-    "html"
-    "wordpress"
+change "js" class of gutter for diferent color theme
+"css"
+"devel"
+"typograph"
+"py" 
+"html"
+"wordpress"
 =============================================== -->
-    <hr class="gutter js"> 
-      {{/☆ Syntax (inline code)}}
-  </h1>
-  <div class="sample-code mb">
-    {{cloze:★ Syntax (code block {cloze})}}
-  </div>
-  <div class="table_answer mb">
-    <div class="td_back">
-      {{type:cloze}}
-    </div>
-  </div>
-  <div class="box-notes">{{★ Key point notes}}</div>
-  <div class="footer mt pb tl">
-      {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
-  </div>
+<div id="answer" class="container card-1">
+	<h1 class="syntax">
+		<div class="gutter devel p+">
+			{{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+		</div>
+		{{#☆ Syntax (inline code)}}
+		<code class="tl">{{☆ Syntax (inline code)}}</code>
+		<hr class="gutter devel"> {{/☆ Syntax (inline code)}}
+	</h1>
+	<div class="sample-code mb">
+		{{cloze:★ Syntax (code block {cloze})}}
+	</div>
+	<div class="table_answer mb">
+		<div class="td_back fz">
+			{{type:cloze}}
+		</div>
+	</div>
+	<div class="box-notes">{{★ Key point notes}}</div>
+	<div class="footer mt pb tl">
+		{{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
+	</div>
+	<div class="mt+">
+		{{#Tags}}{{Tags}}{{/Tags}}
+	</div>
+	<div class="add-space-for-mobile-cloze"></div>
 </div>
-{{#Tags}}{{Tags}}{{/Tags}}
-

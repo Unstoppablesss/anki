@@ -3,18 +3,15 @@
    - Fields:   ★ Selectable choices:
      - variant-1 | variant-2 | variant-3
    - Card: Selectable
-   - ✔ Key point notes - well done: will be display when the aswer is correct for Back Template only
-   - ✘ Key point notes - bummer: will be display when the aswer is wrong for Back Template only
+   - ✔ Key point notes - well done: will display when the aswer is correct for Back Template only
+   - ✘ Key point notes - bummer: will display when the aswer is wrong for Back Template only
    - Info: Choose from the offered answers 
    - Key:  ★ Required
            ☆ Optional (recommended)
            ✎ Optional (Notes)
 =============================================== -->
-<div id="front" class="container card-1 pb">
-  <h1 class="syntax">
-
-    <!-- ==============================================
-    change "js" class of gutter for diferent color theme
+<!-- ==========================================
+    change "js" class of gutter for diferent color theme for each language
     "css"
     "devel"
     "typograph"
@@ -22,121 +19,127 @@
     "html"
     "wordpress"
 =============================================== -->
-    <div id="front" class="container card-1 pb">
-      <h1 class="syntax">
-        <div class="gutter js p-">
-          {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
-        </div>
-        <div id="selectbox">
-          {{★ Selectable choices}}
-        </div>
+<div id="front" class="container card-1 pb">
+  <h1 class="syntax">
+    <div class="gutter devel p+">
+      {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+    </div>
+    <div id="selectbox" class="front-selectbox">
+      {{★ Selectable choices}}
+    </div>
+  </h1>
+  <p class="title"> {{★ Title}} </p>
 
-      </h1>
+  {{#☆ Sample (code block or image)}}
+  <button id="toggle">Show HINT</button>
+  <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>{{/☆ Sample (code block or image)}}
 
+  <span class="ui-icon ui-icon-arrowthick-1-n"> </span>
+  {{#Tags}}{{Tags}}{{/Tags}}
 
-      <p class="title"> {{★ Title}} </p>
+  <div class="add-space-for-mobile-base"></div>
 
-      {{#☆ Sample (code block or image)}}
-      <button id="toggle">Show Sample code</button>
-      <div class="sample-code mb">{{☆ Sample (code block or image)}}</div>
-      {{/☆ Sample (code block or image)}}
-
-      <span class="ui-icon ui-icon-arrowthick-1-n"> </span>
-
-      <div class="tag">{{^Tags}}{{Tags}}{{/Tags}}</div>
-      <div class="add-space-for-mobile-base"></div>
-
-      <!-- ==========================================
+  <!-- ==========================================
 FRONT-SELECTABLE JS
 =============================================== -->
-      <script type="text/javascript">
+  <script type="text/javascript">
   // PLACE FOR front-selectable.js
-      </script>
-      <!-- ==========================================
+  </script>
+  <!-- ==========================================
 end FRONT-SELECTABLE JS
 =============================================== -->
-
-
-      <!--=================================================
+  <!--=================================================
 =            Buttor toggle hide/show of {{☆ Sample (code block or image)}}            =
 ==================================================-->
 
-      <script>
-        var title = document.querySelector('.title');
-        var toggle = document.getElementById('toggle');
-        var sampleCode = document.querySelector('.sample-code');
-        var button = document.getElementsByTagName('button')[0];
+  <script>
+    var title = document.querySelector('.title');
+    var toggle = document.getElementById('toggle');
+    var sampleCode = document.querySelector('.sample-code');
+    var button = document.getElementsByTagName('button')[0];
 
+    sampleCode.style.display = 'none';
+    toggle.addEventListener('click', function () {
+      if (sampleCode.style.display == 'none') {
+        toggle.textContent = 'Hide Sample code';
+        sampleCode.style.display = 'block';
+        button.style.background = '#508abc';
+
+      } else {
+        toggle.textContent = 'Show Sample code';
         sampleCode.style.display = 'none';
-        toggle.addEventListener('click', function () {
-          if (sampleCode.style.display == 'none') {
-            toggle.textContent = 'Hide Sample code';
-            sampleCode.style.display = 'block';
-            button.style.background = '#508abc';
+        button.style.background = '#52bab3';
+      }
+    });
+  </script>
 
-          } else {
-            toggle.textContent = 'Show Sample code';
-            sampleCode.style.display = 'none';
-            button.style.background = '#52bab3';
-          }
-        });
-      </script>
+  <!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
 
-      <!--====  End of Buttor toggle hide/show of {{hint}}  ====-->
 
-      <!-- =====================[Back of card]===================== -->
-      <!-- ==========================================
-BACK-SELECTABLE JS
+
+
+
+
+  <!-- =====================[Back of card]===================== -->
+  <!-- ==========================================
  * values of variables from the front side Selectable:
  * 		sequentian, result,
  * function from the front side Selectable:
  * 		shuffle()
  *
- * ! These variables is available only without "{FrontSide}" tag on the Back template!
- * ! Don't care about of this message in edit mode (Anki 2.1):
+ * ! These variables is available only without "{FrontSide}" tag. on the Back template!
+ * ! Don't care about of this message in edit mode:
  * "Invalid HTML on card: ReferenceError: shuffle is not defined"
  * it happens because the variable "shuffle" defined on the front side of the card. And is only available after displaying the front side.
 
 !!!! These rules not been tested on the AnkiDroid !!!!
 =============================================== -->
-      <h1 class="syntax">
-        <div class="gutter devel p-">
-          {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
-        </div>
-        <div id="selectbox" class="back">
-          {{★ Selectable choices}}
-        </div>
 
-      </h1>
+  <!-- ==========================================
+    change "js" class of gutter for diferent color theme for each language
+    "css"
+    "devel"
+    "typograph"
+    "py" 
+    "html"
+    "wordpress"
+=============================================== -->
+  <div id="answer" class="container card-1">
+    <h1 class="syntax">
+      <div class="gutter devel p+">
+        {{^☆ Syntax}}Syntax{{/☆ Syntax}} {{#☆ Syntax}}{{☆ Syntax}}{{/☆ Syntax}}
+      </div>
+      <div id="selectbox" class="back">
+        {{★ Selectable choices}}
+      </div>
+    </h1>
+    <div class="right-answers mb"></div>
+    <div id="select-result" />
+    <div id="answer" class="container card-1 pt+">
+      <div class="box-code">{{★ Key point (code block or image)}}</div>
 
-      <div class="right-answers mb"></div>
-
-      <div id="select-result" />
-
-      <div id="answer" class="container card-1 pt+">
-        <div class="box-code">{{★ Key point (code block or image)}}</div>
-
-        <div class="box-notes" style="text-align: left">
-          <div id="true">{{#✔ Key point notes - well done}}
-            <font color="#2fab49">Well done! </font>{{✔ Key point notes - well done}}{{/✔ Key point notes - well done}}</div>
-          <div id="false">{{#✘ Key point notes - bummer}}
-            <font color="#d80014">Bummer!&nbsp;</font>{{✘ Key point notes - bummer}}{{/✘ Key point notes - bummer}}</div>
-        </div>
-
-        <div class="footer mt pb tl wrapper">
-          {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
-        </div>
+      <div class="box-notes" style="text-align: left">
+        <div id="true">{{#✔ Key point notes - well done}}
+          <font color="#2fab49">Well done! </font>{{✔ Key point notes - well done}}{{/✔ Key point notes - well done}}</div>
+        <div id="false">{{#✘ Key point notes - bummer}}
+          <font color="#d80014">Bummer!&nbsp;</font>{{✘ Key point notes - bummer}}{{/✘ Key point notes - bummer}}</div>
       </div>
 
-      <div class="tag">{{#Tags}}{{Tags}}{{/Tags}}</div>
-      <div class="add-space-for-mobile-base"></div>
+      <div class="footer mt pb tl wrapper">
+        {{#✎ Other notes}}{{✎ Other notes}}{{/✎ Other notes}}
+      </div>
+    </div>
 
-      <!-- ==========================================
+    {{#Tags}}{{Tags}}{{/Tags}}
+    <div class="add-space-for-mobile-base"></div>
+  </div>
+
+  <!-- ==========================================
 BACK-SELECTABLE JS
 =============================================== -->
-      <script type="text/javascript">
+  <script type="text/javascript">
   // PLACE FOR back-selectable.js
-      </script>
-      <!-- ==========================================
+  </script>
+  <!-- ==========================================
 end BACK-SELECTABLE JS
 =============================================== -->
